@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو (Trazoo) | ABC Counsel</title>
+    <title>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو (Trazoo) | ABC Counsel — إصدار 0.1</title>
 
     <!-- Google Fonts: Alexandria & Cairo -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -82,12 +82,6 @@
             border: 1px solid var(--border-color);
         }
 
-        .brand-pill-trazoo {
-            background: #fffbeb;
-            color: #b45309;
-            border-color: #fde68a;
-        }
-
         .toolbar-brand h1 {
             font-size: 0.975rem;
             font-weight: 800;
@@ -130,22 +124,6 @@
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
 
-        .search-box input {
-            padding: 0.45rem 0.9rem;
-            border: 1px solid var(--border-color);
-            border-radius: 6px;
-            font-family: inherit;
-            font-size: 0.825rem;
-            width: 190px;
-            transition: all 0.2s;
-        }
-
-        .search-box input:focus {
-            outline: none;
-            border-color: var(--secondary);
-            box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
-        }
-
         .btn {
             display: inline-flex;
             align-items: center;
@@ -168,16 +146,6 @@
         .btn-primary:hover {
             background-color: var(--secondary-hover);
             box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
-        }
-
-        .btn-word {
-            background-color: #107c41;
-            color: white;
-        }
-
-        .btn-word:hover {
-            background-color: #0b582e;
-            box-shadow: 0 4px 12px rgba(16, 124, 65, 0.25);
         }
 
         .btn-outline {
@@ -205,7 +173,7 @@
             width: 210mm;
             min-height: 297mm;
             margin: 0 auto;
-            padding: 14mm 18mm 14mm 18mm;
+            padding: 13mm 16mm 13mm 16mm;
             box-shadow: var(--shadow-paper);
             position: relative;
             box-sizing: border-box;
@@ -222,8 +190,8 @@
             justify-content: space-between;
             align-items: center;
             border-bottom: 2px solid var(--primary);
-            padding-bottom: 0.55rem;
-            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            margin-bottom: 0.85rem;
             flex-shrink: 0;
         }
 
@@ -278,9 +246,9 @@
 
         /* Branding Logo Styles */
         .header-logo-abc {
-            height: 38px;
+            height: 36px;
             width: auto;
-            max-width: 175px;
+            max-width: 170px;
             object-fit: contain;
             display: block;
             image-rendering: -webkit-optimize-contrast;
@@ -303,83 +271,24 @@
             text-transform: uppercase;
         }
 
-        /* Vector Branding Badges (Legacy/Fallback) */
-        .logo-box {
-            display: inline-flex;
-            align-items: center;
-            gap: 0.5rem;
-            font-weight: 900;
-            letter-spacing: 0.5px;
-        }
-
-        .logo-trazoo {
-            color: #92400e;
-        }
-
-        .logo-trazoo-mark {
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(135deg, #b45309 0%, #d97706 50%, #f59e0b 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: 900;
-            font-size: 1.1rem;
-            box-shadow: 0 2px 6px rgba(180, 83, 9, 0.25);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .logo-trazoo-mark::after {
-            content: '';
-            position: absolute;
-            width: 10px;
-            height: 10px;
-            background: rgba(255, 255, 255, 0.35);
-            border-radius: 50%;
-            top: 4px;
-            left: 4px;
-        }
-
-        .logo-abc {
-            color: #0f172a;
-        }
-
-        .logo-abc-mark {
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #38bdf8;
-            font-weight: 900;
-            font-size: 0.95rem;
-            box-shadow: 0 2px 6px rgba(15, 23, 42, 0.25);
-            border: 1px solid rgba(56, 189, 248, 0.3);
-        }
-
         /* Headings & Section Styling */
         h2.section-title {
-            font-size: 1.22rem;
+            font-size: 1.18rem;
             font-weight: 800;
             color: var(--primary);
             border-right: 4px solid var(--secondary);
             padding-right: 0.65rem;
-            margin-bottom: 0.85rem;
+            margin-bottom: 0.75rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
         }
 
         h3.subsection-title {
-            font-size: 0.975rem;
+            font-size: 0.95rem;
             font-weight: 800;
             color: #1e293b;
-            margin: 0.85rem 0 0.45rem 0;
+            margin: 0.75rem 0 0.4rem 0;
             display: flex;
             align-items: center;
             gap: 0.45rem;
@@ -388,23 +297,23 @@
         h3.subsection-title::before {
             content: "■";
             color: var(--secondary);
-            font-size: 0.8rem;
+            font-size: 0.75rem;
         }
 
         p,
         li {
-            font-size: 0.84rem;
+            font-size: 0.825rem;
             color: #334155;
-            line-height: 1.58;
+            line-height: 1.55;
         }
 
         ul {
             padding-right: 1.25rem;
-            margin-bottom: 0.75rem;
+            margin-bottom: 0.65rem;
         }
 
         li {
-            margin-bottom: 0.35rem;
+            margin-bottom: 0.3rem;
         }
 
         /* High Visibility Badges */
@@ -456,13 +365,13 @@
             border: 1px solid var(--border-color);
             border-right: 4px solid var(--secondary);
             border-radius: 8px;
-            padding: 0.75rem 1rem;
-            margin-bottom: 0.75rem;
+            padding: 0.65rem 0.9rem;
+            margin-bottom: 0.65rem;
             box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
         }
 
         .callout-box.warning {
-            border-right-color: var(--accent-amber);
+            border-right-color: #f59e0b;
             background: #fffdf5;
         }
 
@@ -479,7 +388,7 @@
         .callout-title {
             font-weight: 800;
             font-size: 0.85rem;
-            margin-bottom: 0.35rem;
+            margin-bottom: 0.3rem;
             display: flex;
             align-items: center;
             gap: 0.45rem;
@@ -487,7 +396,7 @@
 
         /* Tables Styling */
         .data-table-wrapper {
-            margin: 0.75rem 0 1rem 0;
+            margin: 0.65rem 0 0.85rem 0;
             border-radius: 6px;
             border: 1px solid var(--border-color);
             overflow: hidden;
@@ -497,17 +406,17 @@
         .data-table {
             width: 100%;
             border-collapse: collapse;
-            font-size: 0.8rem;
+            font-size: 0.78rem;
             text-align: right;
         }
 
         .data-table thead th {
             background: #0f172a;
             color: #ffffff;
-            padding: 0.5rem 0.7rem;
+            padding: 0.45rem 0.65rem;
             font-weight: 700;
             border-bottom: 1px solid var(--border-color);
-            font-size: 0.78rem;
+            font-size: 0.76rem;
         }
 
         .data-table tbody tr {
@@ -524,10 +433,10 @@
         }
 
         .data-table td {
-            padding: 0.45rem 0.7rem;
+            padding: 0.4rem 0.65rem;
             vertical-align: middle;
             color: #334155;
-            line-height: 1.45;
+            line-height: 1.42;
         }
 
         .data-table td strong {
@@ -538,23 +447,23 @@
         .pipeline-flow {
             display: flex;
             flex-direction: column;
-            gap: 0.5rem;
-            margin: 0.75rem 0;
+            gap: 0.45rem;
+            margin: 0.65rem 0;
             background: #fafafa;
             border: 1px solid var(--border-color);
-            padding: 0.75rem;
+            padding: 0.65rem;
             border-radius: 8px;
         }
 
         .pipeline-step {
             display: grid;
-            grid-template-columns: 42px 140px 1fr 140px;
-            gap: 0.65rem;
+            grid-template-columns: 38px 135px 1fr 135px;
+            gap: 0.6rem;
             align-items: center;
             background: white;
             border: 1px solid #e2e8f0;
             border-radius: 6px;
-            padding: 0.4rem 0.65rem;
+            padding: 0.35rem 0.6rem;
             transition: all 0.2s;
         }
 
@@ -565,13 +474,13 @@
         }
 
         .step-num-circle {
-            width: 32px;
-            height: 32px;
+            width: 30px;
+            height: 30px;
             border-radius: 50%;
             background: var(--secondary-light);
             color: var(--secondary);
             font-weight: 900;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -586,20 +495,20 @@
 
         .step-name-box {
             font-weight: 800;
-            font-size: 0.825rem;
+            font-size: 0.8rem;
             color: var(--primary);
         }
 
         .step-desc-box {
-            font-size: 0.775rem;
+            font-size: 0.75rem;
             color: #475569;
         }
 
         .step-output-box {
             background: #f1f5f9;
-            padding: 0.25rem 0.5rem;
+            padding: 0.2rem 0.45rem;
             border-radius: 4px;
-            font-size: 0.725rem;
+            font-size: 0.7rem;
             font-weight: 700;
             color: #0f172a;
             text-align: center;
@@ -654,7 +563,7 @@
         }
 
         .cover-main-title {
-            font-size: 2.3rem;
+            font-size: 2.25rem;
             font-weight: 900;
             color: var(--primary);
             line-height: 1.3;
@@ -702,7 +611,7 @@
         }
 
         .cover-detail-value {
-            font-size: 0.875rem;
+            font-size: 0.85rem;
             font-weight: 800;
             color: var(--primary);
         }
@@ -711,7 +620,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 2rem;
+            margin-bottom: 1.75rem;
             position: relative;
             z-index: 2;
         }
@@ -720,49 +629,8 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 0.6rem;
+            gap: 0.5rem;
             text-align: center;
-        }
-
-        .cover-client-brand {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-align: right;
-        }
-
-        .cover-client-brand .brand-title {
-            font-size: 1.3rem;
-            font-weight: 900;
-            color: #92400e;
-            line-height: 1.2;
-        }
-
-        .cover-client-brand .brand-sub {
-            font-size: 0.75rem;
-            color: #78716c;
-            font-weight: 600;
-        }
-
-        .cover-partner-brand {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            text-align: left;
-            direction: ltr;
-        }
-
-        .cover-partner-brand .brand-title {
-            font-size: 1.3rem;
-            font-weight: 900;
-            color: var(--primary);
-            line-height: 1.2;
-        }
-
-        .cover-partner-brand .brand-sub {
-            font-size: 0.75rem;
-            color: var(--text-muted);
-            font-weight: 600;
         }
 
         /* Sign-off Sheet Box */
@@ -809,31 +677,36 @@
         }
 
         /* Question Cards for Follow-up */
+        .questions-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.45rem;
+        }
+
         .question-card {
             background: #f8fafc;
             border: 1px solid #e2e8f0;
             border-right: 3px solid #3b82f6;
             border-radius: 6px;
-            padding: 0.55rem 0.85rem;
-            margin-bottom: 0.45rem;
+            padding: 0.45rem 0.75rem;
             display: flex;
-            gap: 0.75rem;
+            gap: 0.6rem;
             align-items: flex-start;
         }
 
         .q-number {
-            width: 24px;
-            height: 24px;
+            width: 22px;
+            height: 22px;
             border-radius: 50%;
             background: #eff6ff;
             color: #2563eb;
             font-weight: 800;
-            font-size: 0.775rem;
+            font-size: 0.75rem;
             display: flex;
             align-items: center;
             justify-content: center;
             flex-shrink: 0;
-            margin-top: 2px;
+            margin-top: 1px;
         }
 
         .q-content {
@@ -842,9 +715,43 @@
 
         .q-title {
             font-weight: 700;
-            font-size: 0.825rem;
+            font-size: 0.78rem;
             color: #0f172a;
-            margin-bottom: 0.15rem;
+            line-height: 1.45;
+        }
+
+        
+        /* Interactive Table of Contents */
+        .toc-row {
+            transition: all 0.15s ease-in-out;
+            cursor: pointer;
+        }
+        .toc-row:hover {
+            background-color: #f0f9ff !important;
+            transform: translateX(-2px);
+        }
+        .toc-link {
+            color: var(--primary);
+            text-decoration: none;
+            display: block;
+            font-weight: 700;
+        }
+        .toc-row:hover .toc-link {
+            color: var(--secondary);
+        }
+        .toc-page-pill {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            background: #e2e8f0;
+            color: #0f172a;
+            border-radius: 4px;
+            font-weight: 800;
+            font-size: 0.75rem;
+            transition: all 0.15s;
+        }
+        .toc-row:hover .toc-page-pill {
+            background: var(--secondary);
+            color: #ffffff;
         }
 
         /* Perfect Print Rules */
@@ -939,7 +846,7 @@
 
 <body>
 
-    <!-- Floating Top Toolbar with Search, Word Export, Print & Filters -->
+    <!-- Floating Top Toolbar with Print, TOC & Filters -->
     <header class="toolbar">
         <div class="toolbar-brand">
             <div class="brand-pill"
@@ -947,7 +854,7 @@
                 <img src="abc_logo.png" alt="ABC Counsel"
                     style="height: 24px; width: auto; display: block; object-fit: contain; image-rendering: -webkit-optimize-contrast;">
             </div>
-            <h1>وثيقة الوضع الحالي (As-Is Document)</h1>
+            <h1>وثيقة الوضع الحالي (As-Is Document) — إصدار 0.1</h1>
         </div>
 
         <div class="toolbar-actions">
@@ -957,11 +864,6 @@
                 <button class="filter-btn" onclick="filterType('query', this)">❓ استفسارات [؟]</button>
                 <button class="filter-btn" onclick="filterType('planned', this)">🚀 مخطط</button>
                 <button class="filter-btn" onclick="filterType('risk', this)">⚠️ مخاطر وقضايا</button>
-            </div>
-
-            <!-- Search Box -->
-            <div class="search-box">
-                <input type="text" id="searchInput" placeholder="بحث شامل في الوثيقة..." onkeyup="filterContent()">
             </div>
 
             <!-- Action Buttons -->
@@ -981,7 +883,7 @@
             <svg class="cover-bg-tech" viewBox="0 0 794 1123" preserveAspectRatio="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <defs>
-                    <linearGradient id="coverBgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <linearGradient id="page-1" x1="0%" y1="0%" x2="100%" y2="100%">
                         <stop offset="0%" stop-color="#ffffff" />
                         <stop offset="100%" stop-color="#fdfbf7" />
                     </linearGradient>
@@ -1015,7 +917,7 @@
             <div class="cover-hero-center">
                 <div class="cover-badge-top">مشروع دراسة وتحليل العمليات الصناعية التشغيلية</div>
                 <h1 class="cover-main-title">وثيقة الوضع الحالي (As-Is Document)</h1>
-                <div class="cover-main-subtitle">مصنع ترازّو لتصنيع الألواح والبلوكات (Terrazzo Factory)</div>
+                <div class="cover-main-subtitle">مصنع ترازّو لتصنيع الألواح والبلوكات (Terazoo Factory)</div>
             </div>
 
             <!-- Metadata Details Grid -->
@@ -1023,7 +925,7 @@
                 <div class="cover-details-grid">
                     <div class="cover-detail-item">
                         <span class="cover-detail-label">الجهة المالكة (Client)</span>
-                        <span class="cover-detail-value">مصنع ترازّو (Trazoo Terrazzo Factory)</span>
+                        <span class="cover-detail-value">مصنع ترازّو (Trazoo Terazoo Factory)</span>
                     </div>
 
                     <div class="cover-detail-item">
@@ -1033,18 +935,18 @@
 
                     <div class="cover-detail-item">
                         <span class="cover-detail-label">رقم الإصدار (Version)</span>
-                        <span class="cover-detail-value">0.1 (مسودة رسمية للمراجعة والتأكيد)</span>
+                        <span class="cover-detail-value">0.1 (مسودة رسمية موسعة للمراجعة والتأكيد)</span>
                     </div>
 
                     <div class="cover-detail-item">
                         <span class="cover-detail-label">تاريخ الإصدار (Release Date)</span>
-                        <span class="cover-detail-value">21 أكتوبر 2026</span>
+                        <span class="cover-detail-value">2 نوفمبر 2026</span>
                     </div>
 
                     <div class="cover-detail-item" style="grid-column: span 2;">
                         <span class="cover-detail-label">الحالة التشغيلية والاعتماد (Status)</span>
                         <span class="cover-detail-value" style="color: #b45309;">
-                            ⚠️ غير معتمدة رسمياً — بانتظار حسم التعارضات وتأكيد أصحاب العمليات
+                            ⚠️ غير معتمدة رسمياً — بانتظار حسم التعارضات وتأكيد أصحاب العمليات (مسودة v0.1 محدثة)
                         </span>
                     </div>
                 </div>
@@ -1053,7 +955,7 @@
             <!-- Cover Footer -->
             <div class="page-footer" style="position: relative; z-index: 2; border-top: none;">
                 <span>© 2026 Trazoo & ABC Counsel. Confidential Business Analysis Document.</span>
-                <span>الصفحة 1 من 14</span>
+                <span>الصفحة 1 من 20</span>
             </div>
         </section>
 
@@ -1073,105 +975,147 @@
             <main class="page-content">
                 <h2 class="section-title" id="toc-section">
                     <span>جدول المحتويات التنفيذي</span>
-                    <span style="font-size:0.75rem;font-weight:600;color:var(--text-muted);">فهرس أقسام الوثيقة</span>
+                    <span style="font-size:0.75rem;font-weight:600;color:var(--text-muted);">فهرس أقسام الوثيقة (إصدار
+                        0.1)</span>
                 </h2>
 
                 <div class="data-table-wrapper">
                     <table class="data-table">
                         <thead>
                             <tr>
-                                <th style="width: 8%;">#</th>
-                                <th style="width: 42%;">القسم / المكون الوظيفي</th>
-                                <th style="width: 38%;">المحتوى الأساسي ونطاق التحليل</th>
-                                <th style="width: 12%; text-align:center;">الصفحة</th>
+                                <th style="width: 7%;">#</th>
+                                <th style="width: 38%;">القسم / المكون الوظيفي</th>
+                                <th style="width: 45%;">المحتوى الأساسي ونطاق التحليل</th>
+                                <th style="width: 10%; text-align:center;">الصفحة</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-3')" title="انتقل إلى الصفحة 03">
                                 <td><strong>01</strong></td>
-                                <td><strong>الغرض والنطاق وحدود الوثيقة</strong></td>
-                                <td>أهداف التوثيق، حدود النطاق العملي، وتنبيهات القارئ الحرجة</td>
-                                <td style="text-align:center;"><strong>03</strong></td>
+                                <td><a href="#page-3" class="toc-link">عن شركة ABC Counsel</a></td>
+                                <td>التعريف بالشركة الاستشارية، رؤيتها ورسالتها، وخدماتها في مجال ERP واستشارات الأعمال</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">03</span></td>
                             </tr>
-                            <tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-4')" title="انتقل إلى الصفحة 04">
                                 <td><strong>02</strong></td>
-                                <td><strong>نظرة عامة على مراحل الإنتاج التسع</strong></td>
-                                <td>سلسلة المنتجات نصف المصنعة ومخطط التدفق التفاعلي الكامل</td>
-                                <td style="text-align:center;"><strong>04</strong></td>
+                                <td><a href="#page-4" class="toc-link">الغرض والنطاق</a></td>
+                                <td>أهداف التوثيق، حدود النطاق، وسياق المشروع</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">04</span></td>
                             </tr>
-                            <tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-5')" title="انتقل إلى الصفحة 05">
                                 <td><strong>03</strong></td>
-                                <td><strong>تفاصيل العمليات الإنتاجية (3.1 - 3.3)</strong></td>
-                                <td>الخامات، الجوالات، 4 كسارات، 5 فئات مقاس، والصرف للتصنيع</td>
-                                <td style="text-align:center;"><strong>05</strong></td>
+                                <td><a href="#page-5" class="toc-link">نظرة عامة على المصنع وأصول التشغيل</a></td>
+                                <td>طبيعة الإنتاج، حصر الماكينات والمعدات (10 أصول رئيسية)، وحالة التشغيل</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">05</span></td>
                             </tr>
-                            <tr>
-                                <td><strong>03</strong></td>
-                                <td><strong>تفاصيل العمليات الإنتاجية (3.4 - 3.5)</strong></td>
-                                <td>الخلط والصب، ميكسر 5 طن، بلوك 10 طن، الفاكيوم والمعالجة (Curing)</td>
-                                <td style="text-align:center;"><strong>06</strong></td>
-                            </tr>
-                            <tr>
-                                <td><strong>03</strong></td>
-                                <td><strong>تفاصيل العمليات الإنتاجية (3.6 - 3.7)</strong></td>
-                                <td>التقطيع بـ 4 مناشير، خط التلميع بثلاث طبقات، والفحص المعملي</td>
-                                <td style="text-align:center;"><strong>07</strong></td>
-                            </tr>
-                            <tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-6')" title="انتقل إلى الصفحة 06">
                                 <td><strong>04</strong></td>
-                                <td><strong>التخطيط والمشتريات وإجراءات الاستلام</strong></td>
-                                <td>دورة الخطوات الست (PR -> RFQ -> PO -> GRN) وفحص الخامات وقطع الغيار</td>
-                                <td style="text-align:center;"><strong>08</strong></td>
+                                <td><a href="#page-6" class="toc-link">الهيكل التنظيمي ومصفوفة الأدوار</a></td>
+                                <td>توزيع المسؤوليات (8 أدوار)، وفصل الصلاحيات (Segregation of Duties)</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">06</span></td>
                             </tr>
-                            <tr>
-                                <td><strong>05 & 06</strong></td>
-                                <td><strong>الصيانة والتكاليف والمالية</strong></td>
-                                <td>أوامر الصيانة (Work Orders)، تكلفة الماكينات، توزيع المرافق والريزن</td>
-                                <td style="text-align:center;"><strong>09</strong></td>
+                            <tr class="toc-row" onclick="scrollToPage('page-7')" title="انتقل إلى الصفحة 07">
+                                <td><strong>05</strong></td>
+                                <td><a href="#page-7" class="toc-link">مراحل الإنتاج ومخطط التدفق</a></td>
+                                <td>سلسلة المنتجات نصف المصنعة ومخطط التدفق التفاعلي الكامل للمراحل التسع</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">07</span></td>
                             </tr>
-                            <tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-8')" title="انتقل إلى الصفحة 08">
+                                <td><strong>05</strong></td>
+                                <td><a href="#page-8" class="toc-link">تفاصيل العمليات الإنتاجية (1/3)</a></td>
+                                <td>الخامات، الجوالات، 4 كسارات تخصصية، و5 فئات مقاس حجمي (Mix Design)</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">08</span></td>
+                            </tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-9')" title="انتقل إلى الصفحة 09">
+                                <td><strong>05</strong></td>
+                                <td><a href="#page-9" class="toc-link">تفاصيل العمليات الإنتاجية (2/3)</a></td>
+                                <td>الخلط والصب، ميكسر 5 طن، بلوك 10 طن، ماكينة الفاكيوم، والمعالجة (Curing)</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">09</span></td>
+                            </tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-10')" title="انتقل إلى الصفحة 10">
+                                <td><strong>05</strong></td>
+                                <td><a href="#page-10" class="toc-link">تفاصيل العمليات الإنتاجية (3/3)</a></td>
+                                <td>التقطيع بـ 4 مناشير، خط التلميع بثلاثة تشطيبات، والفحص المعملي الميكانيكي</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">10</span></td>
+                            </tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-11')" title="انتقل إلى الصفحة 11">
+                                <td><strong>06</strong></td>
+                                <td><a href="#page-11" class="toc-link">التخطيط والمشتريات وإجراءات الاستلام</a></td>
+                                <td>دورة التوريد السداسية (PR -> RFQ -> PO -> GRN)، وبروتوكولات الفحص</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">11</span></td>
+                            </tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-12')" title="انتقل إلى الصفحة 12">
                                 <td><strong>07</strong></td>
-                                <td><strong>الهيكل التنظيمي ومصفوفة الأدوار</strong></td>
-                                <td>تحديد المسؤوليات لسلسلة الإمداد، التخطيط، المخازن، الجودة، والمالية</td>
-                                <td style="text-align:center;"><strong>10</strong></td>
+                                <td><a href="#page-12" class="toc-link">المخازن والصرف للتصنيع</a></td>
+                                <td>أوامر الشغل (Job Order)، آلية الصرف، معضلة موازين الجوالات، وتفريغ الحوامل</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">12</span></td>
                             </tr>
-                            <tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-13')" title="انتقل إلى الصفحة 13">
                                 <td><strong>08</strong></td>
-                                <td><strong>المشكلات التشغيلية والمخاطر الموثقة</strong></td>
-                                <td>سجل القضايا المفتوحة (ISS-001, ISS-002) والمخاطر (RSK-001, RSK-002)</td>
-                                <td style="text-align:center;"><strong>11</strong></td>
+                                <td><a href="#page-13" class="toc-link">الصيانة وإدارة قطع الغيار</a></td>
+                                <td>أوامر الصيانة (Work Orders)، تكلفة الماكينات، وصرف قطع الغيار والمهمات</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">13</span></td>
                             </tr>
-                            <tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-14')" title="انتقل إلى الصفحة 14">
                                 <td><strong>09</strong></td>
-                                <td><strong>مصفوفة التعارضات والغموض للبت فيها</strong></td>
-                                <td>تحليل التناقضات بين المصادر السابقة (C-1 إلى C-6) لقرار الإدارة</td>
-                                <td style="text-align:center;"><strong>12</strong></td>
+                                <td><a href="#page-14" class="toc-link">مستلزمات الإنتاج ومعالجة المياه</a></td>
+                                <td>أعمار الأدوات ومستلزمات التشغيل، دورة معالجة المياه، والكيماويات</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">14</span></td>
                             </tr>
-                            <tr>
-                                <td><strong>10 & 11</strong></td>
-                                <td><strong>أسئلة المتابعة والوضع المستهدف (To-Be)</strong></td>
-                                <td>الأسئلة الثمانية لأصحاب العمليات، وما يقع خارج حدود وثيقة الوضع الراهن</td>
-                                <td style="text-align:center;"><strong>13</strong></td>
+                            <tr class="toc-row" onclick="scrollToPage('page-15')" title="انتقل إلى الصفحة 15">
+                                <td><strong>10</strong></td>
+                                <td><a href="#page-15" class="toc-link">التكاليف والمالية (Cost Accounting)</a></td>
+                                <td>تكلفة المواد المباشرة، إهلاك المستلزمات، وتوزيع المرافق والريزن ومراكز التكلفة</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">15</span></td>
                             </tr>
-                            <tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-16')" title="انتقل إلى الصفحة 16">
+                                <td><strong>11</strong></td>
+                                <td><a href="#page-16" class="toc-link">المستندات والسجلات المذكورة</a></td>
+                                <td>حصر المستندات الرسمية العشرة وسجلات التتبع في دورات العمل الصناعية</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">16</span></td>
+                            </tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-17')" title="انتقل إلى الصفحة 17">
                                 <td><strong>12</strong></td>
-                                <td><strong>الاعتماد والتوقيعات الرسمية</strong></td>
-                                <td>محضر التوقيع المشترك بين العميل (Trazoo) والاستشاري (ABC Counsel)</td>
-                                <td style="text-align:center;"><strong>14</strong></td>
+                                <td><a href="#page-17" class="toc-link">المشكلات والقيود والمخاطر التشغيلية</a></td>
+                                <td>سجل المشكلات والقيود (ISS-001 إلى 004) والمخاطر (RSK-001 إلى 003)</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">17</span></td>
+                            </tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-18')" title="انتقل إلى الصفحة 18">
+                                <td><strong>13</strong></td>
+                                <td><a href="#page-18" class="toc-link">مصفوفة التعارضات والغموض للبت فيها</a></td>
+                                <td>حصر التعارضات الجوهرية العشرة الواجب حسمها بقرار الإدارة</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">18</span></td>
+                            </tr>
+                            <tr class="toc-row" onclick="scrollToPage('page-19')" title="انتقل إلى الصفحة 19">
+                                <td><strong>14</strong></td>
+                                <td><a href="#page-19" class="toc-link">الأسئلة والفجوات المفتوحة لفريق المصنع</a></td>
+                                <td>الأسئلة الثلاثة عشر الحاسمة لحسم متطلبات النظام الصناعي واستكمال النموذج</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">19</span></td>
+                            </tr>
+                            
+                            <tr class="toc-row" onclick="scrollToPage('page-20')" title="انتقل إلى الصفحة 20">
+                                <td><strong>15</strong></td>
+                                <td><a href="#page-20" class="toc-link">محضر مراجعة واعتماد الوثيقة</a></td>
+                                <td>التوقيعات الرسمية المشتركة بين إدارة العميل (Trazoo) والاستشاري (ABC Counsel)</td>
+                                <td style="text-align:center;"><span class="toc-page-pill">20</span></td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="callout-box warning" style="margin-top: 1rem;">
+                <div class="callout-box warning" style="margin-top: 0.65rem;">
                     <div class="callout-title">
-                        <span>💡 ملخص تنفيذي لطبيعة الوثيقة</span>
+                        <span>💡 ملخص تنفيذي لطبيعة الوثيقة (إصدار 0.1 المحدث)</span>
                     </div>
-                    <p style="font-size:0.8rem; line-height:1.55;">
-                        تُمثل هذه الوثيقة الأساس المرجعي لوصف العمليات الفعلية داخل مصنع ترازّو (Trazoo) كما تم استقاؤها
-                        ميدانياً. لا تتضمن الوثيقة أي حلول مستقبلية أو افتراضات برمجية، بل تركز حصراً على تسجيل الواقع
-                        الفعلي ورصد الفجوات والتعارضات القائمة بين المصادر المختلفة، لتكون بمثابة قاعدة صلبة يُبنى عليها
-                        لاحقاً نموذج العمل المستهدف (To-Be Solution Design) وتطبيق نظام إدارة الموارد (ERP).
+                    <p style="font-size:0.78rem; line-height:1.52;">
+                        تُمثل هذه الوثيقة (الإصدار 0.1 المحدث) الأساس المرجعي الشامل لوصف العمليات الفعلية داخل مصنع
+                        ترازّو (Trazoo)
+                        كما تم استقاؤها ميدانياً وعبر الجلسات الاستقصائية، متضمنةً تفريغات الجولات ومستلزمات الإنتاج
+                        ودورة معالجة المياه الصناعية.
+                        لا تتضمن الوثيقة أي حلول مستقبلية أو افتراضات برمجية، بل تركز حصراً على تسجيل الواقع الفعلي ورصد
+                        الفجوات والتعارضات القائمة بين المصادر،
+                        لتكون بمثابة قاعدة صلبة يُبنى عليها لاحقاً نموذج العمل المستهدف (To-Be Solution Design) وتطبيق
+                        نظام إدارة الموارد (ERP).
                     </p>
                 </div>
             </main>
@@ -1179,26 +1123,114 @@
             <footer class="page-footer">
                 <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
                 <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 2 من 14</span>
+                <span>الصفحة 2 من 20</span>
             </footer>
         </section>
 
 
-        <!-- ================= PAGE 3: SECTION 1: PURPOSE, SCOPE & BOUNDARIES ================= -->
+        <!-- ================= PAGE 3: SECTION 1: ABOUT ABC COUNSEL ================= -->
         <section class="a4-page" id="page-3">
             <header class="page-header">
                 <div class="page-header-logos">
                     <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
                 </div>
                 <div class="doc-meta-header">
-                    <strong>Section 1: Purpose & Scope</strong>
+                    <strong>Section 1: About ABC Counsel</strong>
                     <span>v0.1</span>
                 </div>
             </header>
 
             <main class="page-content">
                 <h2 class="section-title">
-                    <span>1. الغرض والنطاق وحدود الوثيقة</span>
+                    <span>1. عن شركة ABC Counsel</span>
+                    <span class="badge badge-info">تعريف بالشريك الاستشاري</span>
+                </h2>
+
+                <div class="callout-box">
+                    <div class="callout-title">
+                        <span>🏢 التعريف بالشركة</span>
+                    </div>
+                    <p style="font-size:0.8rem; line-height:1.6;">
+                        <strong>ABC Counsel</strong> هي شركة استشارات إدارية وتقنية متخصصة في تقديم الحلول الاستشارية
+                        وتطوير الأعمال، مع التركيز على استشارات تخطيط موارد المؤسسات (ERP)، وتطوير وهندسة العمليات
+                        التشغيلية والصناعية.
+                    </p>
+                    <p style="font-size:0.8rem; line-height:1.6; margin-top:0.4rem;">
+                        نؤمن بأن نجاح التحول الرقمي لا يبدأ باختيار النظام، بل بفهم طبيعة الأعمال وتحليل العمليات وتحديد
+                        التحديات والفرص المتاحة. ومن هذا المنطلق، نعمل كشريك استشاري استراتيجي لعملائنا، لمساعدتهم على
+                        تحسين أدائهم التشغيلي، وتطوير إجراءات العمل، واتخاذ قرارات أكثر كفاءة وفاعلية.
+                    </p>
+                </div>
+
+                <div class="callout-box" style="margin-top:0.5rem;">
+                    <div class="callout-title">
+                        <span>👥 فريق العمل</span>
+                    </div>
+                    <p style="font-size:0.8rem; line-height:1.6;">
+                        يضم فريقنا مجموعة من الاستشاريين والمتخصصين ذوي الخبرات في مجالات الإدارة والأعمال والتكنولوجيا
+                        وأنظمة ERP، مما يمكننا من تقديم رؤية متكاملة تجمع بين الفهم العميق للعمليات التجارية والخبرة
+                        التقنية.
+                    </p>
+                </div>
+
+                <h3 class="subsection-title">الخدمات الاستشارية المتكاملة</h3>
+                <p style="font-size:0.8rem; line-height:1.6; margin-bottom:0.65rem;">
+                    نقدم مجموعة متكاملة من الخدمات الاستشارية، بدايةً من دراسة وتحليل الوضع الحالي (As-Is Analysis)،
+                    وإعادة تصميم وتحسين العمليات (Business Process Optimization)، مرورًا بتحديد المتطلبات وتصميم الحلول
+                    المناسبة (Solution Design)، وصولًا إلى استشارات وتنفيذ وتطبيق أنظمة ERP، والتدريب والدعم المستمر.
+                </p>
+                <p style="font-size:0.8rem; line-height:1.6; margin-bottom:0.65rem;">
+                    نحرص على تقديم توصيات موضوعية وحلول مصممة وفقًا لطبيعة كل مؤسسة وأهدافها، مع التركيز على تحقيق أقصى
+                    قيمة استثمارية وضمان استدامة التطوير والتحسين.
+                </p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin-top: 0.65rem;">
+                    <div class="callout-box success" style="margin-bottom:0;">
+                        <div class="callout-title">
+                            <span>🔭 رؤيتنا</span>
+                        </div>
+                        <p style="font-size:0.78rem; line-height:1.55;">
+                            أن نكون شريكًا استشاريًا موثوقًا للمؤسسات التي تسعى إلى تطوير أعمالها وتحقيق التميز التشغيلي
+                            من خلال الدمج الفعّال بين الاستشارات الإدارية والحلول التقنية.
+                        </p>
+                    </div>
+
+                    <div class="callout-box" style="border-right-color:#6d28d9; margin-bottom:0;">
+                        <div class="callout-title">
+                            <span>🎯 رسالتنا</span>
+                        </div>
+                        <p style="font-size:0.78rem; line-height:1.55;">
+                            مساعدة المؤسسات على تجاوز التحديات الإدارية والتشغيلية والتقنية، وتحويلها إلى فرص للنمو
+                            والتطوير، من خلال تقديم استشارات احترافية وحلول عملية تحقق نتائج ملموسة وتدعم النجاح
+                            المستدام.
+                        </p>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 3 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 4: SECTION 2: PURPOSE, SCOPE & SOURCES ================= -->
+        <section class="a4-page" id="page-4">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 2: Purpose & Scope</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>2. الغرض والنطاق</span>
                     <span class="badge badge-info">وثيقة مرجعية أساسية</span>
                 </h2>
 
@@ -1206,180 +1238,58 @@
                     <div class="callout-title">
                         <span>🎯 الغرض الأساسي من الوثيقة</span>
                     </div>
-                    <p>
+                    <p style="font-size:0.8rem; line-height:1.5;">
                         توثّق هذه الوثيقة كيف يعمل مصنع ترازّو (Trazoo) حالياً في واقعه التشغيلي القائم، كما وصفه فريقه
-                        الإداري والفني في المقابلات الاستقصائية والجولة الميدانية المشتركة. وقد صيغت الوثيقة بشكل وصفي
-                        موضوعي بحت، دون تضمين أي تصميم لحلول مقترحة أو توصيات استشارية مسبقة.
+                        الإداري والفني في المقابلات الاستقصائية والجولة الميدانية المشتركة والتسجيلات المتاحة حتى
+                        تاريخه.
+                        وقد صيغت الوثيقة بشكل وصفي موضوعي بحت، دون تضمين أي تصميم لحلول مقترحة أو توصيات استشارية مسبقة.
                     </p>
                 </div>
 
-                <h3 class="subsection-title">حدود النطاق العملي (Scope Boundaries)</h3>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin-bottom: 0.65rem;">
                     <div
-                        style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:6px; padding:0.65rem 0.85rem;">
-                        <strong style="color:#166534; font-size:0.82rem; display:block; margin-bottom:0.35rem;">
+                        style="background:#f0fdf4; border:1px solid #bbf7d0; border-radius:6px; padding:0.55rem 0.75rem;">
+                        <strong style="color:#166534; font-size:0.8rem; display:block; margin-bottom:0.25rem;">
                             ✅ مجالات مشمولة بالوثيقة الحالية:
                         </strong>
-                        <ul style="padding-right:1rem; margin-bottom:0; font-size:0.78rem;">
-                            <li>العمليات الإنتاجية الكاملة ومراحل تصنيع البلوك والألواح.</li>
+                        <ul style="padding-right:1rem; margin-bottom:0; font-size:0.75rem; line-height:1.45;">
+                            <li>العمليات الإنتاجية الكاملة وتصنيع البلوك والألواح.</li>
                             <li>تخطيط الإنتاج وتخطيط الاحتياجات وسلسلة المشتريات.</li>
-                            <li>المخازن، تخزين الخامات، قطع الغيار، والصرف للتشغيل.</li>
+                            <li>المخازن والصرف للتشغيل ومستلزمات الإنتاج.</li>
                             <li>صيانة الماكينات والورشة الملحقة وقطع الغيار.</li>
-                            <li>محاسبة التكاليف وتوزيع التكاليف المباشرة وغير المباشرة.</li>
+                            <li>دورة معالجة المياه الصناعية واستخدام الكيماويات.</li>
+                            <li>محاسبة التكاليف الصناعية وتوزيع المرافق ومراكز التكلفة.</li>
                         </ul>
                     </div>
 
                     <div
-                        style="background:#fef2f2; border:1px solid #fecaca; border-radius:6px; padding:0.65rem 0.85rem;">
-                        <strong style="color:#991b1b; font-size:0.82rem; display:block; margin-bottom:0.35rem;">
+                        style="background:#fef2f2; border:1px solid #fecaca; border-radius:6px; padding:0.55rem 0.75rem;">
+                        <strong style="color:#991b1b; font-size:0.8rem; display:block; margin-bottom:0.25rem;">
                             ❌ مجالات لم تُغطَّ بعد (مرحلة لاحقة):
                         </strong>
-                        <ul style="padding-right:1rem; margin-bottom:0; font-size:0.78rem;">
+                        <ul style="padding-right:1rem; margin-bottom:0; font-size:0.75rem; line-height:1.45;">
                             <li>المبيعات، أوامر البيع للعملاء، والائتمان والتحصيل.</li>
                             <li>الحسابات الدائنة والمدفوعات والإقفال المالي السنوي.</li>
                             <li>الموارد البشرية وشؤون الموظفين وكشوف الرواتب.</li>
                             <li>تتبع الباركود الإلكتروني للوحدات المقطعة (ضمن To-Be).</li>
+                            <li>تحليل الانحرافات وحسابات الربحية المتقدمة.</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="callout-box warning">
-                    <div class="callout-title">
+
+
+                <div class="callout-box warning" style="margin-bottom:0; padding:0.5rem 0.8rem;">
+                    <div class="callout-title" style="font-size:0.8rem; margin-bottom:0.2rem;">
                         <span>⚠️ تنبيهات هامة لقارئ الوثيقة والمراجعين</span>
                     </div>
-                    <ul style="padding-right:1.25rem; font-size:0.78rem; line-height:1.55; margin-bottom:0;">
-                        <li><strong>شهادات غير مدققة:</strong> المعلومات المذكورة مسجلة على لسان المتحدثين في الاجتماعات
-                            ولم تُراجع وتُدقق إحصائياً بعد.</li>
-                        <li><strong>ممارسات قيد التخطيط:</strong> المصنع لم يعمل بكامل طاقته التشغيلية حتى تاريخه؛ لذا
-                            فإن بعض الممارسات المقيدة في الوثيقة هي ممارسات "مخططة" نظرياً ولم تُجرب فعلياً على خط
-                            الإنتاج، وقد وُضعت عليها علامة <span class="badge badge-planned">مخطط</span>.</li>
-                        <li><strong>الباركود وتتبع البلوك:</strong> نظام الباركود الإلكتروني وربط الألواح بكود البلوك
-                            الأم يقع حصراً ضمن وثيقة الوضع المستهدف (To-Be) وليس ضمن هذه الوثيقة.</li>
-                        <li><strong>علامة الاستفسار <span class="badge badge-query">[؟]</span>:</strong> تعني أن
-                            المعلومة غير محسومة أو تحتاج إلى تأكيد ومراجعة من أصحاب العمليات.</li>
-                    </ul>
-                </div>
-            </main>
-
-            <footer class="page-footer">
-                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
-                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 3 من 14</span>
-            </footer>
-        </section>
-
-
-        <!-- ================= PAGE 4: SECTION 2: PRODUCTION STAGES OVERVIEW ================= -->
-        <section class="a4-page" id="page-4">
-            <header class="page-header">
-                <div class="page-header-logos">
-                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
-                </div>
-                <div class="doc-meta-header">
-                    <strong>Section 2: Production Stages</strong>
-                    <span>v0.1</span>
-                </div>
-            </header>
-
-            <main class="page-content">
-                <h2 class="section-title">
-                    <span>2. نظرة عامة على مراحل الإنتاج ومخطط التدفق</span>
-                    <span class="badge badge-info">9 مراحل تصنيعية</span>
-                </h2>
-
-                <p style="margin-bottom: 0.65rem;">
-                    تتفق كافة الأطراف المعنية على أن ناتج كل مرحلة في مصنع ترازّو يُعتبر محاسبياً وتشغيلياً بمثابة
-                    <strong>منتج نصف مصنّع (Semi-finished Good)</strong>. وفيما يلي المخطط المعتمد لتسلسل المراحل كما
-                    ورد في المقابلات وخطة المشروع:
-                </p>
-
-                <!-- Visual Interactive Production Pipeline Component -->
-                <div class="pipeline-flow">
-                    <div class="pipeline-step">
-                        <div class="step-num-circle">1</div>
-                        <div class="step-name-box">تخزين الخامات</div>
-                        <div class="step-desc-box">تخزين الرخام والخامات في جوالات (Big Bags) والأسمنت في سيلوهات رأسية
-                        </div>
-                        <div class="step-output-box">خامات مخزنة مُكوّدة</div>
-                    </div>
-
-                    <div class="pipeline-step">
-                        <div class="step-num-circle">2</div>
-                        <div class="step-name-box">التكسير والتجهيز</div>
-                        <div class="step-desc-box">تكسير الرخام بـ 4 كسارات تخصصية وفرزها إلى 5 فئات حجمية دقيقة</div>
-                        <div class="step-output-box">كسر رخام بمقاسات</div>
-                    </div>
-
-                    <div class="pipeline-step">
-                        <div class="step-num-circle">3</div>
-                        <div class="step-name-box">الخلط الآلي (Mixing)</div>
-                        <div class="step-desc-box">خلط الكسر مع الأسمنت، الماء، الإضافات الكيميائية والألوان في ميكسر 5
-                            طن</div>
-                        <div class="step-output-box">خلطة رطبة (دفعة 5 طن)</div>
-                    </div>
-
-                    <div class="pipeline-step">
-                        <div class="step-num-circle">4</div>
-                        <div class="step-name-box">الصب في القالب</div>
-                        <div class="step-desc-box">صب الخلطة على دفعتين متتاليتين (5+5 طن) لتشكيل بلوك واحد بوزن 10 طن
-                        </div>
-                        <div class="step-output-box">بلوك خام 10 طن</div>
-                    </div>
-
-                    <div class="pipeline-step">
-                        <div class="step-num-circle">5</div>
-                        <div class="step-name-box">سحب الهواء (Vacuum)</div>
-                        <div class="step-desc-box">معالجة القالب بغرفة الفاكيوم لسحب الهواء والماء المصاحب مع دوران
-                            واهتزاز</div>
-                        <div class="step-output-box">بلوك مصمت متماسك</div>
-                    </div>
-
-                    <div class="pipeline-step">
-                        <div class="step-num-circle">6</div>
-                        <div class="step-name-box">الفك والمعالجة (Curing)</div>
-                        <div class="step-desc-box">فك جوانب القالب بعد 24 ساعة، ثم ترك البلوك للمعالجة والتصلب من 14 إلى
-                            28 يوماً</div>
-                        <div class="step-output-box">بلوك معالج جاهز للقطع</div>
-                    </div>
-
-                    <div class="pipeline-step">
-                        <div class="step-num-circle">7</div>
-                        <div class="step-name-box">التقطيع بمناشير</div>
-                        <div class="step-desc-box">تقطيع البلوك المعالج بواسطة 4 مناشير كهربائية متعددة الأسلحة إلى
-                            ألواح</div>
-                        <div class="step-output-box">ألواح خامة (Slabs)</div>
-                    </div>
-
-                    <div class="pipeline-step">
-                        <div class="step-num-circle">8</div>
-                        <div class="step-name-box">الجلي والتلميع</div>
-                        <div class="step-desc-box">معالجة الألواح بالريزن والمرور بثلاث طبقات جلخ وتلميع (لامع، نصف
-                            لامع، خشن)</div>
-                        <div class="step-output-box">لوح ترازّو مصقول</div>
-                    </div>
-
-                    <div class="pipeline-step" style="border-right: 3px solid #f59e0b; background:#fffdf5;">
-                        <div class="step-num-circle unconfirmed">9؟</div>
-                        <div class="step-name-box">
-                            <span>قطع إضافي وتغليف</span>
-                            <span class="badge badge-query">تحتاج تأكيداً</span>
-                        </div>
-                        <div class="step-desc-box">قص تفصيلي خاص حسب مواصفات المقاس للعميل، ثم التغليف للبيع النهائي
-                        </div>
-                        <div class="step-output-box" style="background:#fef3c7; color:#92400e;">منتج نهائي مُغلّف</div>
-                    </div>
-                </div>
-
-                <!-- Callout regarding the stage discrepancy -->
-                <div class="callout-box warning">
-                    <div class="callout-title">
-                        <span>🔍 ملاحظة وتعارض حول حصر المراحل الإنتاجية (C-4)</span>
-                    </div>
-                    <p style="font-size:0.78rem; line-height:1.5;">
-                        تتحدث خطة المشروع المعتمدة (SRC-005) عن وجود <strong>تسع مراحل تنتهي بالتلميع</strong>، بينما
-                        القائمة التشغيلية المتفق عليها في الجولة الميدانية ومحاضر الاجتماعات (SRC-003 & SRC-004) تتضمن
-                        <strong>ثماني مراحل فقط</strong>. تُعد المرحلة التاسعة المقترحة (القطع الإضافي والتغليف) ونقطة
-                        التوقف الرسمية للوحدات نصف المصنعة محل نقاش واستفسار يحتاج إلى حسم واعتماد من إدارة المصنع.
+                    <p style="font-size:0.75rem; line-height:1.42; margin-bottom:0;">
+                        المعلومات مسجلة على لسان المتحدثين في المقابلات ولم تُدقق إحصائياً بعد. نظراً لأن المصنع لم يعمل
+                        بكامل طاقته بعد،
+                        فإن بعض الممارسات المقيدة هي ممارسات "مخططة" نظرياً ووضعت عليها علامة <span
+                            class="badge badge-planned">مخطط</span>،
+                        بينما تشير علامة <span class="badge badge-query">[؟]</span> إلى نقاط غير محسومة تحتاج إلى تأكيد
+                        رسمي من أصحاب العمليات.
                     </p>
                 </div>
             </main>
@@ -1387,619 +1297,151 @@
             <footer class="page-footer">
                 <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
                 <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 4 من 14</span>
+                <span>الصفحة 4 من 20</span>
             </footer>
         </section>
 
 
-        <!-- ================= PAGE 5: SECTION 3: DETAILED OPERATIONS (3.1 - 3.3) ================= -->
+        <!-- ================= PAGE 5: SECTION 3: FACTORY OVERVIEW & ASSETS ================= -->
         <section class="a4-page" id="page-5">
             <header class="page-header">
                 <div class="page-header-logos">
                     <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
                 </div>
                 <div class="doc-meta-header">
-                    <strong>Section 3: Detailed Operations (Part 1)</strong>
+                    <strong>Section 3: Factory Overview & Assets</strong>
                     <span>v0.1</span>
                 </div>
             </header>
 
             <main class="page-content">
                 <h2 class="section-title">
-                    <span>3. تفاصيل العمليات الإنتاجية (1/3)</span>
-                    <span class="badge badge-info">الخامات، التكسير، والصرف</span>
+                    <span>3. نظرة عامة على المصنع وأصول التشغيل</span>
+                    <span class="badge badge-info">قسم جديد (v0.1)</span>
                 </h2>
 
-                <!-- 3.1 Raw Materials & Storage -->
-                <h3 class="subsection-title">3.1 الخامات والتخزين (Raw Materials & Storage)</h3>
-                <ul>
-                    <li>
-                        <strong>الخامة الأساسية:</strong> رخام مكسّر جاهز (كسر)، أو بلوكات رخام كاملة تُكسَّر داخل
-                        المصنع. يتم شراؤها إما من السوق المحلي أو عبر الاستيراد من الخارج، نظراً لأن بعض الأنواع المميزة
-                        (مثل رخام <em>التاسوس الأبيض اليوناني - Thassos</em>) غير متوفرة في المحاجر المحلية.
-                    </li>
-                    <li>
-                        <strong>طبيعة المشتريات والحالة:</strong> ذُكر في المقابلات أن الشراء قد يكون «جديداً أو
-                        مستعملاً، من مصر أو مستورداً»
-                        <span class="badge badge-query">[؟ هل ينطبق ذلك على الخامة أم على الجوالات Big Bags؟]</span>.
-                        والمعلومة المسجلة سابقاً توضح أن المستعمل المحلي من الجوالات أنظف وأجود من الجوالات المستوردة.
-                    </li>
-                    <li>
-                        <strong>المواد الكيميائية والمساعدة:</strong> تشمل أسمنت، إضافات تلدين ومحسنات تشغيلية
-                        (Plasticizer)، ألوان وأكاسيد، وريزن للتشطيب.
-                        <span class="badge badge-query">[؟ النص الأصلي ذكر «مواد دخان»، ويُرجَّح بقوة أنها تصحيف لكلمة
-                            «مواد خام» وتتطلب تدقيقاً رسمياً]</span>.
-                    </li>
-                    <li>
-                        <strong>سياسة التخزين والأوعية:</strong> تُخزَّن المواد الحصوية والخامات في جوالات كبيرة (Big
-                        Bags)، بينما يُخزن الأسمنت داخل سيلوهات رأسية مخصصة. تمتلك الجوالات كوداً ورقماً مخزنياً وسياسة
-                        تخزين معتمدة، ويُخطط لاستخدام الجوال أكثر من مرة
-                        <span class="badge badge-planned">مخطط: مرتين أو ثلاثاً حسب الحالة الفنية للجوال، ولم تُجرب
-                            بعد</span>.
-                    </li>
-                </ul>
+                <div class="callout-box">
+                    <div class="callout-title">
+                        <span>🏭 طبيعة النشاط والمنتجات الأساسية</span>
+                    </div>
+                    <p style="font-size:0.8rem; line-height:1.55;">
+                        يُنتج المصنع بلوكات هندسية ضخمة من كسر الرخام والأسمنت، يبلغ وزن البلوك الواحد <strong>10
+                            أطنان</strong>.
+                        وتُقطع هذه البلوكات بواسطة مناشير آلية إلى ألواح (Slabs) وتُلمَّع على خط التلميع، كما قد تُقص
+                        لاحقاً إلى بلاطات
+                        أو أشكال خاصة حسب متطلبات العملاء. يعمل المصنع حالياً وفق نمط <strong>الإنتاج حسب الطلب (Make to
+                            Order - MTO)</strong>
+                        مع إمكانية الإنتاج للمخزون. وقد ذُكر في المقابلات أن المصنع لم يعمل بكامل طاقته بعد،
+                        فكثير من الممارسات
+                        هو تصاميم وإجراءات مخططة لم تُجرَّب بعد على نطاق صناعي موسع.
+                    </p>
+                </div>
 
-                <!-- 3.2 Crushing & Preparation -->
-                <h3 class="subsection-title">3.2 التكسير والتجهيز (Crushing & Sizing)</h3>
-                <p style="margin-bottom: 0.5rem;">
-                    يمتلك المصنع <strong>4 كسّارات ميكانيكية</strong> ويتعامل مع حوالي <strong>10 أنواع رئيسية من
-                        الخامات</strong>. وقد تم تخصيص كل كسارة لاستخدام محدد بدقة منعاً لتلوث الألوان والخلطات (وفق نوع
-                    الخامة، اللون، المقاس، والمنتج المستهدف).
-                </p>
-
-                <div class="data-table-wrapper">
+                <h3 class="subsection-title">حصر المعدات والأصول الرئيسية في خطوط الإنتاج والتشغيل</h3>
+                <div class="data-table-wrapper" style="margin: 0.5rem 0 0.75rem 0;">
                     <table class="data-table">
                         <thead>
                             <tr>
-                                <th style="width: 25%;">فئة المقاس الحجمي</th>
-                                <th style="width: 25%;">النطاق بالمليمتر <span class="badge badge-query">[؟ وحدة
-                                        القياس]</span></th>
-                                <th style="width: 50%;">الاستخدام والتحكم عبر الـ Mix Design</th>
+                                <th style="width: 28%;">المعدة أو العنصر</th>
+                                <th style="width: 72%;">ما ورد في التفريغات والمقابلات الفنية</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>الفئة الأولى (G1)</strong></td>
-                                <td>0.1 – 0.2</td>
-                                <td>بودرة ناعمة وحبيبات دقيقة لملء الفراغات البينية</td>
+                                <td><strong>الكسارات (Crushers)</strong></td>
+                                <td>4 كسّارات</td>
                             </tr>
                             <tr>
-                                <td><strong>الفئة الثانية (G2)</strong></td>
-                                <td>0.2 – 4.0</td>
-                                <td>كسر متوسط دقيق لتحقيق التماسك السطحي</td>
+                                <td><strong>فئات المقاس الحجمي</strong></td>
+                                <td>5 فئات حجمية: 0.1–0.2، 0.2–4، 4–6، 6–10، 10–20 <span class="badge badge-query">[؟
+                                        الوحدة غير مذكورة صراحة]</span></td>
                             </tr>
                             <tr>
-                                <td><strong>الفئة الثالثة (G3)</strong></td>
-                                <td>4.0 – 6.0</td>
-                                <td>كسر متوسط قياسي لتشكيل نسيج الترازّو الأساسي</td>
+                                <td><strong>سيلوهات الأسمنت</strong></td>
+                                <td>3 سيلوهات</td>
                             </tr>
                             <tr>
-                                <td><strong>الفئة الرابعة (G4)</strong></td>
-                                <td>6.0 – 10.0</td>
-                                <td>حبيبات كبيرة تظهر كعروق وقطع زخرفية في اللوح</td>
+                                <td><strong>الميكسر (Mixer)</strong></td>
+                                <td>سعة الميكسر 5 طن، والخلط والتوزين يتمان تلقائياً عبر نظام التحكم الآلي المبرمج</td>
                             </tr>
                             <tr>
-                                <td><strong>الفئة الخامسة (G5)</strong></td>
-                                <td>10.0 – 20.0</td>
-                                <td>قطع خشنة للموديلات المعمارية الحديثة (Venetian Style)</td>
+                                <td><strong>ماكينة الفاكيوم</strong></td>
+                                <td>سحب هواء (وماء) مع تطبيق دوران واهتزاز بقوى وترددات مختلفة لمنع المسام والجيوب
+                                    الهوائية</td>
+                            </tr>
+                            <tr>
+                                <td><strong>المناشير (Gang Saws)</strong></td>
+                                <td>4 مناشير ضخمة</td>
+                            </tr>
+                            <tr>
+                                <td><strong>خط التلميع (Polishing)</strong></td>
+                                <td>ثلاث طبقات جلخ وتلميع، ودرجات تشطيب متعددة: لامع (Polished)، نصف لامع (Honed)، وخشن
+                                    (Brushed)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>ماكينة القص الخاص</strong></td>
+                                <td>لقص بلاطات وأشكال هندسية خاصة</td>
+                            </tr>
+                            <tr>
+                                <td><strong>معمل ضبط الجودة</strong></td>
+                                <td>معمل موقعي يضم: جهاز قياس اللمعان (Glossmeter)، مكنة اختبار الضغط، وجهاز قياس السمك
+                                    الرقمي</td>
+                            </tr>
+                            <tr>
+                                <td><strong>محطة معالجة المياه</strong></td>
+                                <td>حفرة تجميع (Sump Pit)، خزانات ترسيب، حقن كيماويات، ومكبس فلتر لعصر الطين واسترجاع
+                                    الماء</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <p style="font-size:0.78rem; color:#64748b; margin-top:-0.4rem; margin-bottom:0.75rem;">
-                    <em>* يحدد تصميم الخلطة (Mix Design) نسبة كل مقاس من هذه الفئات لكل موديل ومنتج نهائي مطلوب
-                        تصنيعه.</em>
-                </p>
 
-                <!-- 3.3 Issuance to Production -->
-                <h3 class="subsection-title">3.3 الصرف للتصنيع (Issuance & Floor Control)</h3>
-                <ul>
-                    <li>
-                        <strong>آلية الصرف:</strong> يصدر أمر شغل معتمد (Job Order) وتُصرف الخامات من المخزن مباشرة
-                        بوحدة الكيلوجرام إلى صالة التصنيع، دون أي إجراءات فحص إضافية بصالة الإنتاج، اعتماداً على أن
-                        الفحص الكامل قد تم عند الاستلام المخزني.
-                    </li>
-                    <li>
-                        <strong>معضلة الموازين:</strong> يقع الميزان الدقيق الوحيد داخل خط الإنتاج عند ماكينة الخلط
-                        (الميكسر) فقط، ولا يتوفر أي ميزان معتمد في المخزن لصرف الجوالات أو لوزن الكميات المرتجعة.
-                    </li>
-                    <li>
-                        <strong>تفريغ الحوامل:</strong> بعد اكتمال الإنتاج، يتم تفريغ ما أُطلق عليه «الحوامل العشرة»
-                        <span class="badge badge-query">[؟ المقصود غير واضح: هل هي منصات الجوالات المرتجعة؟ وكيف يتم وزن
-                            وقيد الرصيد المتبقي بدقة؟]</span>.
-                    </li>
-                </ul>
+                <div class="callout-box warning" style="margin-bottom:0;">
+                    <div class="callout-title">
+                        <span>🔍 دلالة حالة الأصول والتشغيل على نموذج الوضع المستهدف</span>
+                    </div>
+                    <p style="font-size:0.77rem; line-height:1.5; margin-bottom:0;">
+                        توضح مصفوفة الأصول أن المصنع يمتلك بنية تحتية تصنيعية متقدمة ذات طاقات ميكانيكية متخصصة، إلا أن
+                        ربط هذه الأصول
+                        بنظام ERP يتطلب حسماً دقيقاً لمراكز التكلفة (Cost Centers)، وتحديد عدادات الاستهلاك ومعدلات
+                        إهلاك أسلحة المناشير
+                        وأحجار الجلي التي لا تزال حالياً خاضعة لتقديرات أولية على لسان الموردين.
+                    </p>
+                </div>
             </main>
 
             <footer class="page-footer">
                 <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
                 <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 5 من 14</span>
+                <span>الصفحة 5 من 20</span>
             </footer>
         </section>
 
 
-        <!-- ================= PAGE 6: SECTION 3: DETAILED OPERATIONS (3.4 - 3.5) ================= -->
+        <!-- ================= PAGE 5: SECTION 4: ROLES & ORGANIZATIONAL STRUCTURE ================= -->
         <section class="a4-page" id="page-6">
             <header class="page-header">
                 <div class="page-header-logos">
                     <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
                 </div>
                 <div class="doc-meta-header">
-                    <strong>Section 3: Detailed Operations (Part 2)</strong>
+                    <strong>Section 4: Organizational Roles & Structure</strong>
                     <span>v0.1</span>
                 </div>
             </header>
 
             <main class="page-content">
                 <h2 class="section-title">
-                    <span>3. تفاصيل العمليات الإنتاجية (2/3)</span>
-                    <span class="badge badge-info">الخلط، الصب، والفاكيوم</span>
-                </h2>
-
-                <!-- 3.4 Mixing & Casting -->
-                <h3 class="subsection-title">3.4 الخلط والصب (Mixing & Mold Casting)</h3>
-                <ul>
-                    <li>
-                        <strong>التغذية والوزن الآلي:</strong> تدخل مكونات الأسمنت (تلقائياً من السيلوهات)، والمياه
-                        المحسوبة، والإضافات الكيميائية، والألوان، وكسر الرخام إلى الميكسر بأوزان مبرمجة آلياً عبر نظام
-                        التحكم وفق وصفة الـ Mix Design.
-                    </li>
-                    <li>
-                        <strong>طاقة الميكسر وحجم البلوك:</strong> تبلغ السعة القصوى للميكسر <strong>5 أطنان</strong>،
-                        بينما يبلغ الحجم الهندسي للبلوك المطلوب <strong>10 أطنان</strong>؛ لذلك يُنفَّذ إنتاج البلوك
-                        الواحد على <strong>دفعتين متتاليتين (5 طن + 5 طن)</strong> تُصبان في نفس القالب.
-                    </li>
-                    <li>
-                        <strong>استحالة التخزين الوسيط:</strong> لا يوجد أي مخزون نصف مصنع قبل تشكيل البلوك. الخلطة
-                        المجهزة يجب أن تُصب بالكامل داخل القالب دون أي تأخير، وإلا ستتلف وتُهدر بالكامل نتيجة بدء تفاعل
-                        التصلب للأسمنت (Risk of Setting).
-                    </li>
-                    <li>
-                        <strong>استراتيجية الإنتاج:</strong> يتبع المصنع حالياً استراتيجية <strong>الإنتاج حسب الطلب
-                            (Make to Order - MTO)</strong>، وتُنتج البلوكات تلبية لأوامر بيع وعقود محددة.
-                    </li>
-                    <li>
-                        <strong>سيارة القوالب الآلية:</strong> تتولى عربة نقل/سيارة أوتوماتيكية متخصصة وضع القالب المفرغ
-                        تحت فتحة الصب، حيث تُفرَّغ الخلطة بدقة داخل القالب لتشكيل البلوك الهندسي.
-                    </li>
-                </ul>
-
-                <!-- Visual Box of 5t+5t batching -->
-                <div
-                    style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:0.65rem 1rem; margin:0.65rem 0;">
-                    <strong style="color:var(--primary); font-size:0.825rem; display:block; margin-bottom:0.35rem;">
-                        ⚙️ ديناميكية تشكيل البلوك في خط الصب:
-                    </strong>
-                    <div
-                        style="display:flex; align-items:center; justify-content:space-around; text-align:center; font-size:0.75rem;">
-                        <div
-                            style="background:white; border:1px solid #cbd5e1; border-radius:6px; padding:0.4rem 0.75rem;">
-                            <div style="font-weight:800; color:var(--secondary);">الدفعة الأولى (Batch 1)</div>
-                            <div>5 أطنان ميكسر</div>
-                        </div>
-                        <div style="font-size:1.2rem; color:#94a3b8; font-weight:800;">+</div>
-                        <div
-                            style="background:white; border:1px solid #cbd5e1; border-radius:6px; padding:0.4rem 0.75rem;">
-                            <div style="font-weight:800; color:var(--secondary);">الدفعة الثانية (Batch 2)</div>
-                            <div>5 أطنان ميكسر</div>
-                        </div>
-                        <div style="font-size:1.2rem; color:#94a3b8; font-weight:800;">➔</div>
-                        <div
-                            style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:0.4rem 0.75rem;">
-                            <div style="font-weight:800; color:#b45309;">قالب البلوك النهائي</div>
-                            <div>10 أطنان مصموتة</div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 3.5 Vacuum & Curing -->
-                <h3 class="subsection-title">3.5 سحب الهواء والمعالجة (Vacuum De-airing & Curing)</h3>
-                <ul>
-                    <li>
-                        <strong>تقنية الفاكيوم المتقدمة:</strong> يدخل القالب المحمل بالخلطة ماكينة تفريغ الهواء (Vacuum
-                        Chamber) لسحب كامل فقاعات الهواء والماء الفائض المحبوس، بالتزامن مع تطبيق حركة دوران واهتزاز
-                        ميكانيكي بقوى وترددات متغيرة، لمنع تشكل أي فجوات أو مسام داخلية في جسم البلوك.
-                    </li>
-                    <li>
-                        <strong>فك الجوانب:</strong> بعد انقضاء <strong>24 ساعة</strong> من الصب وسحب الهواء، يتم فك
-                        الجوانب المعدنية للقالب ويبقى البلوك مستقراً على قاعدته الخرسانية/المعدنية.
-                    </li>
-                    <li>
-                        <strong>فترة المعالجة والتصلب (Curing Period):</strong> يُترك البلوك المفكوك في ساحة المعالجة
-                        لمدة <strong>14 يوماً على الأقل</strong> قبل السماح بنقله إلى المناشير للقطع
-                        <span class="badge badge-query">[تعارض قائم: ورد في SRC-003 أن المدة تتراوح بين 14 و 28 يوماً
-                            تبعاً للخلطة والظروف المناخية]</span>.
-                    </li>
-                </ul>
-
-                <div class="callout-box warning">
-                    <div class="callout-title">
-                        <span>⚠️ الأثر الفني لفترة المعالجة (Curing Period)</span>
-                    </div>
-                    <p style="font-size:0.78rem; line-height:1.5;">
-                        تعتبر فترة المعالجة عاملاً حاسماً في جودة الترازّو؛ فقطع البلوك قبل اكتمال الإماهة الكيميائية
-                        للأسمنت يؤدي إلى تفتت الحواف وشرخ الألواح وتلف شفرات المناشير، في حين أن الإطالة غير المحسوبة
-                        ترفع تكلفة التخزين الوسيط وتبطئ دورة رأس المال التشغيلي للمصنع.
-                    </p>
-                </div>
-            </main>
-
-            <footer class="page-footer">
-                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
-                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 6 من 14</span>
-            </footer>
-        </section>
-
-
-        <!-- ================= PAGE 7: SECTION 3: DETAILED OPERATIONS (3.6 - 3.7) ================= -->
-        <section class="a4-page" id="page-7">
-            <header class="page-header">
-                <div class="page-header-logos">
-                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
-                </div>
-                <div class="doc-meta-header">
-                    <strong>Section 3: Detailed Operations (Part 3)</strong>
-                    <span>v0.1</span>
-                </div>
-            </header>
-
-            <main class="page-content">
-                <h2 class="section-title">
-                    <span>3. تفاصيل العمليات الإنتاجية (3/3)</span>
-                    <span class="badge badge-info">التقطيع، التلميع، والفحص</span>
-                </h2>
-
-                <!-- 3.6 Cutting & Polishing -->
-                <h3 class="subsection-title">3.6 التقطيع والتلميع (Cutting, Polishing & Sizing)</h3>
-                <ul>
-                    <li>
-                        <strong>مناشير التقطيع:</strong> يمتلك المصنع <strong>4 مناشير ضخمة متعددة الشفرات (Gang
-                            Saws)</strong> تتولى تقطيع البلوك المعالج بالكامل إلى ألواح هندسية (Slabs). وتُصنف هذه
-                        الألواح في النظام المحاسبي كمنتجات نصف مصنعة.
-                    </li>
-                    <li>
-                        <strong>خط التلميع ومعالجة السطح:</strong> تمر الألواح عبر خط تلميع آلي يخضع لثلاث مراحل معالجة
-                        متتالية تتضمن تطبيق طبقة من الريزن المعالج لمعالجة السطح الدقيق وسد أي مسام مجهرية.
-                    </li>
-                    <li>
-                        <strong>درجات التشطيب المتاحة (Finishing Degrees):</strong>
-                        ينتج خط التلميع ثلاثة مستويات تشطيب رئيسية تلبي متطلبات السوق:
-                        <ol style="padding-right: 1.25rem; font-size: 0.79rem; margin: 0.35rem 0;">
-                            <li><strong>لامع (Polished):</strong> تشطيب عاكس ومصقول بالكامل للاستخدامات الداخلية
-                                الراقية.</li>
-                            <li><strong>نصف لامع (Honed / Mat):</strong> تشطيب مطفي ناعم بدون لمعان عاكس.</li>
-                            <li><strong>خشن (Brushed / Textured):</strong> تشطيب سطحي محبب مانع للانزلاق للمناطق الرطبة
-                                والخارجية.</li>
-                        </ol>
-                    </li>
-                    <li>
-                        <strong>نقطة المنتج النهائي والقص الإضافي:</strong> بعد التلميع، قد يُنقل اللوح مباشرة للتغليف
-                        والبيع النهائي كلوح ترازّو، أو يُحوَّل إلى ورشة القص التفصيلي (Custom Cut-to-Size) لقص مقاسات
-                        وبلاطات هندسية خاصة
-                        <span class="badge badge-query">[؟ يتوقف تصنيف اللوح كمنتج نهائي أو نصف مصنع على القرار البيعي
-                            المعتمد]</span>.
-                    </li>
-                </ul>
-
-                <!-- 3.7 Quality Control & Inspection -->
-                <h3 class="subsection-title">3.7 الفحص وضبط الجودة (Testing & Quality Assurance)</h3>
-                <p style="margin-bottom: 0.5rem;">
-                    يتوفر في مصنع ترازّو <strong>معمل متكامل لضبط الجودة في الموقع</strong>. وتشمل بروتوكولات الفحص
-                    المتبعة نوعين رئيسيين:
-                </p>
-
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; margin-bottom: 0.75rem;">
-                    <div
-                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.65rem 0.85rem;">
-                        <strong style="color:var(--primary); font-size:0.8rem; display:block; margin-bottom:0.35rem;">
-                            👁️ الفحص البصري والسطحي (Visual Inspection):
-                        </strong>
-                        <ul style="padding-right:1rem; margin-bottom:0; font-size:0.77rem;">
-                            <li>قياس درجة اللمعان السطحي بواسطة <em>جهاز مقياس اللمعان (Glossmeter)</em>.</li>
-                            <li>فحص المسامات السطحية والفقاعات الهوائية والعيوب اللونية.</li>
-                            <li>مطابقة توزيع كسر الرخام وتجانسه مع عينة الموديل المعتمدة.</li>
-                        </ul>
-                    </div>
-
-                    <div
-                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.65rem 0.85rem;">
-                        <strong style="color:var(--primary); font-size:0.8rem; display:block; margin-bottom:0.35rem;">
-                            🔬 الفحص المعملي والميكانيكي (Lab Testing):
-                        </strong>
-                        <ul style="padding-right:1rem; margin-bottom:0; font-size:0.77rem;">
-                            <li>اختبار مقاومة الانضغاط والقوة الميكانيكية بواسطة <em>ماكينة الضغط الهيدروليكية</em>.
-                            </li>
-                            <li>القياس الرقمي لسمك الألواح بدقة مليمترية (Thickness Gauge).</li>
-                            <li>فحص امتصاص الماء ومقاومة الاحتكاك والتآكل.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="callout-box warning">
-                    <div class="callout-title">
-                        <span>❓ نقطة الغموض حول موضع الفحص في مسار الإنتاج (C-6)</span>
-                    </div>
-                    <p style="font-size:0.78rem; line-height:1.5;">
-                        على الرغم من وجود معمل الجودة والأجهزة الميدانية، فإن <strong>نقطة الفحص الإلزامية
-                            بالتحديد</strong> ضمن تسلسل المراحل غير موثقة إجرائياً: هل يتم الفحص بعد مرحلة التقطيع
-                        مباشرة أم بعد التلميع النهائي؟ كما أن تبعية مهندسي الفحص (هل تتبع إدارة التخطيط الصناعي أم إدارة
-                        جودة مستقلة) ما زالت بحاجة إلى حسم تنظيمي.
-                    </p>
-                </div>
-            </main>
-
-            <footer class="page-footer">
-                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
-                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 7 من 14</span>
-            </footer>
-        </section>
-
-
-        <!-- ================= PAGE 8: SECTION 4: PLANNING & PROCUREMENT ================= -->
-        <section class="a4-page" id="page-8">
-            <header class="page-header">
-                <div class="page-header-logos">
-                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
-                </div>
-                <div class="doc-meta-header">
-                    <strong>Section 4: Planning & Procurement</strong>
-                    <span>v0.1</span>
-                </div>
-            </header>
-
-            <main class="page-content">
-                <h2 class="section-title">
-                    <span>4. التخطيط والمشتريات وإجراءات الاستلام</span>
-                    <span class="badge badge-info">دورة التوريد السداسية</span>
-                </h2>
-
-                <p style="margin-bottom: 0.65rem;">
-                    تسير دورة التخطيط وتوفير الاحتياجات للمصنع عبر ست خطوات إجرائية موثقة وفق ما أدلى به مسؤولو سلسلة
-                    الإمداد والتخطيط:
-                </p>
-
-                <div class="data-table-wrapper">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th style="width: 8%;">#</th>
-                                <th style="width: 44%;">الخطوة والوصف الإجرائي</th>
-                                <th style="width: 28%;">الجهة المسؤولة</th>
-                                <th style="width: 20%;">المستند المعتمد</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>1</strong></td>
-                                <td>
-                                    <strong>تحويل الأهداف إلى خطة إنتاج:</strong>
-                                    تحويل مستهدفات المبيعات وأوامر البيع للعملاء إلى خطة إنتاج مصنعية
-                                    <span class="badge badge-query">[؟ آلية التحويل الحالية غير مدققة]</span>
-                                </td>
-                                <td>إدارة التخطيط</td>
-                                <td>خطة الإنتاج (Production Plan)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>2</strong></td>
-                                <td>
-                                    <strong>طلب احتياجات المصنع:</strong>
-                                    يطلب المخطط الخامات وفق خطة الإنتاج، أو حسب أمر بيع محدد، أو يطلب قطع الغيار اللازمة
-                                </td>
-                                <td>مخطط إنتاج / مخطط قطع غيار وخدمات</td>
-                                <td>طلب شراء (Purchase Requisition - PR)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>3</strong></td>
-                                <td>
-                                    <strong>الاعتماد الفني والإداري:</strong>
-                                    مراجعة طلب الشراء واعتماده من رئيس التخطيط ثم اعتماده رسمياً من مدير المصنع
-                                </td>
-                                <td>رئيس التخطيط ومدير المصنع</td>
-                                <td>طلب شراء معتمد (Approved PR)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>4</strong></td>
-                                <td>
-                                    <strong>استدراج العروض والتفاوض:</strong>
-                                    إذا وجد عقد توريد سنوي سارٍ يتم التنفيذ مباشرة؛ وإلا يُرسل استدراج عروض لـ 3 موردين،
-                                    ويُعد جدول مقارنة وتفاوض
-                                </td>
-                                <td>مسؤول المشتريات (Buyer)</td>
-                                <td>استدراج عروض (RFQ) وجدول مقارنة أسعار</td>
-                            </tr>
-                            <tr>
-                                <td><strong>5</strong></td>
-                                <td>
-                                    <strong>إصدار أمر الشراء والاعتماد الرباعي:</strong>
-                                    إصدار PO واعتماده من مدير المشتريات، مدير سلسلة الإمداد، الإدارة المالية (التدفق
-                                    النقدي)، ومدير المصنع، ثم إرساله للمورد
-                                </td>
-                                <td>المشتريات، سلسلة الإمداد، المالية، مدير المصنع</td>
-                                <td>أمر شراء رسمي (Purchase Order - PO)</td>
-                            </tr>
-                            <tr>
-                                <td><strong>6</strong></td>
-                                <td>
-                                    <strong>التسليم والتوريد للمخزن:</strong>
-                                    يقوم المورد بشحن المواد إلى مستودعات المصنع بموجب رقم أمر الشراء المحدد
-                                </td>
-                                <td>المورد / أمين المخزن</td>
-                                <td>رقم أمر الشراء وإذن التسليم</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <h3 class="subsection-title">إجراءات الاستلام والفحص المخزني (Receiving & Inspection Protocols)</h3>
-                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem;">
-                    <div
-                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.65rem 0.85rem;">
-                        <strong style="color:var(--primary); font-size:0.8rem; display:block; margin-bottom:0.35rem;">
-                            📦 استلام قطع الغيار والمهمات:
-                        </strong>
-                        <p style="font-size:0.77rem; line-height:1.5; margin-bottom:0;">
-                            يقوم أمين المخزن بمطابقة الأصناف الواردة ظاهرياً مع أمر الشراء (PO)، ثم يقوم الفني المختص أو
-                            طالب الصنف بفحصه فنياً والتوقيع على <strong>تقرير فحص معتمد</strong>. بعد ثبوت المطابقة،
-                            يستلم المخزن الصنف رسمياً، ويتم تكويده ووضعه في مكانه التخزيني المخصص (Bin Location).
-                        </p>
-                    </div>
-
-                    <div
-                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.65rem 0.85rem;">
-                        <strong style="color:var(--primary); font-size:0.8rem; display:block; margin-bottom:0.35rem;">
-                            🧱 استلام الخامات والرخام والأسمنت:
-                        </strong>
-                        <p style="font-size:0.77rem; line-height:1.5; margin-bottom:0;">
-                            يتم إخطار إدارة المخازن مسبقاً بالشحنات الكبيرة من الخامات والرخام. وقبل السماح بدخول أي
-                            شحنة (سواء كانت مشتراة محلياً أو مستوردة من الخارج) إلى ساحة التخزين، يقوم <strong>مهندسو
-                                ضبط الجودة بسحب عينات وفحصها والتصريح بقبولها</strong> وإدخالها المخزن.
-                        </p>
-                    </div>
-                </div>
-            </main>
-
-            <footer class="page-footer">
-                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
-                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 8 من 14</span>
-            </footer>
-        </section>
-
-
-        <!-- ================= PAGE 9: SECTION 5 & 6: MAINTENANCE & COSTING ================= -->
-        <section class="a4-page" id="page-9">
-            <header class="page-header">
-                <div class="page-header-logos">
-                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
-                </div>
-                <div class="doc-meta-header">
-                    <strong>Section 5 & 6: Maintenance & Costing</strong>
-                    <span>v0.1</span>
-                </div>
-            </header>
-
-            <main class="page-content">
-                <!-- Section 5: Maintenance -->
-                <h2 class="section-title">
-                    <span>5. الصيانة وإدارة قطع الغيار</span>
-                    <span class="badge badge-info">تحميل التكلفة على مستوى الماكينة</span>
-                </h2>
-
-                <div class="callout-box">
-                    <div class="callout-title">
-                        <span>🔧 دورة أوامر العمل وتتبع تكاليف الماكينات</span>
-                    </div>
-                    <p style="font-size:0.8rem; line-height:1.55; margin-bottom:0.4rem;">
-                        تبدأ دورة الصيانة بإصدار <strong>طلب عمل (Work Request)</strong> من قبل المخطط للصيانة الوقائية
-                        الدورية أو الصيانة الطارئة للأعطال. ويتحول هذا الطلب إلى <strong>أمر عمل معتمد (Work
-                            Order)</strong>.
-                    </p>
-                    <ul style="padding-right:1.25rem; font-size:0.78rem; line-height:1.55; margin-bottom:0;">
-                        <li><strong>صرف قطع الغيار:</strong> تُصرف قطع الغيار من المخزن مباشرة على أمر العمل الخاص
-                            بالماكينة المحددة.</li>
-                        <li><strong>صرف مستلزمات التشغيل:</strong> أسلحة المناشير (Diamond Blades)، أجهزة الكسارات،
-                            وأحجار الجلي والتلميع تُصرف هي الأخرى على كود الماكينة المحددة.</li>
-                        <li><strong>المردود المحاسبي:</strong> يسمح هذا الإجراء بحساب التكلفة التشغيلية وصيانة كل ماكينة
-                            بشكل مستقل وتاريخي دقيق.</li>
-                    </ul>
-                </div>
-
-                <!-- Section 6: Costing & Finance -->
-                <h2 class="section-title" style="margin-top: 1rem;">
-                    <span>6. التكاليف والمالية (Cost Accounting)</span>
-                    <span class="badge badge-info">التوزيع المباشر ومراكز التكلفة</span>
-                </h2>
-
-                <div class="data-table-wrapper">
-                    <table class="data-table">
-                        <thead>
-                            <tr>
-                                <th style="width: 25%;">عنصر التكلفة</th>
-                                <th style="width: 25%;">التصنيف المحاسبي</th>
-                                <th style="width: 50%;">آلية التحميل والتوزيع المتبعة والتعارضات القائمة</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><strong>المواد الخام والخامات الحصوية</strong></td>
-                                <td>تكلفة مباشرة (Direct Material)</td>
-                                <td>تُحمَّل المواد المنصرفة من المخزن مباشرة على أمر الشغل (Job Order) المحدد للبلوك.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>مستلزمات التشغيل (أسلحة المناشير وأحجار الجلي)</strong></td>
-                                <td>إهلاك أو تكلفة مباشرة <span class="badge badge-query">[؟ أيهما]</span></td>
-                                <td>
-                                    تُحمَّل كإهلاك أو تكلفة مباشرة وتوزع على المتر المربع أو على عدد البلوكات المقطوعة
-                                    <span class="badge badge-query">[؟ يحتاج حسم أساس التوزيع المحاسبي بدقة]</span>.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td><strong>الريزن ومعالجة السطح</strong></td>
-                                <td>تكلفة تشغيلية مباشرة</td>
-                                <td>يُحتسب استهلاك الريزن وفق الكمية الفعلية المستهلكة بدقة على سطح اللوح المصقول.</td>
-                            </tr>
-                            <tr>
-                                <td><strong>المرافق العامة (الكهرباء، المياه، والغاز)</strong></td>
-                                <td>تكاليف غير مباشرة ومراكز تكلفة</td>
-                                <td>
-                                    توزعها الإدارة المالية على الماكينات التشغيلية وفق مراكز التكلفة المعتمدة (مباشرة،
-                                    غير مباشرة، ومرافق).
-                                    <span class="badge badge-query">[؟ نسب ومعايير التوزيع لم تُذكر في الاجتماعات وتحتاج
-                                        توثيقاً]</span>.
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <div class="callout-box warning">
-                    <div class="callout-title">
-                        <span>⚠️ ثغرة الربط بين المنصرف والفعلي</span>
-                    </div>
-                    <p style="font-size:0.78rem; line-height:1.5;">
-                        نظراً لغياب الميزان عند الصرف من المخزن واعتماد الوزن عند الميكسر فقط، فإن التكلفة المحملة على
-                        أمر الشغل تمثل الكمية التقديرية أو المقاسة عند الميكسر دون وجود تسوية دورية للمخزون الفعلي
-                        المتبقي في ساحة الإنتاج، مما يُنشئ فروق جرد وتكاليف تشغيلية غير دقيقة.
-                    </p>
-                </div>
-            </main>
-
-            <footer class="page-footer">
-                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
-                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 9 من 14</span>
-            </footer>
-        </section>
-
-
-        <!-- ================= PAGE 10: SECTION 7: ORGANIZATIONAL ROLES ================= -->
-        <section class="a4-page" id="page-10">
-            <header class="page-header">
-                <div class="page-header-logos">
-                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
-                </div>
-                <div class="doc-meta-header">
-                    <strong>Section 7: Roles & Responsibilities</strong>
-                    <span>v0.1</span>
-                </div>
-            </header>
-
-            <main class="page-content">
-                <h2 class="section-title">
-                    <span>7. الهيكل التنظيمي ومصفوفة الأدوار</span>
+                    <span>4. الهيكل التنظيمي ومصفوفة الأدوار</span>
                     <span class="badge badge-info">الأدوار الموثقة تشغيلياً</span>
                 </h2>
 
-                <p style="margin-bottom: 0.65rem;">
+                <p style="margin-bottom: 0.55rem; font-size:0.8rem;">
                     يوضح الجدول التالي الأدوار التنظيمية الثمانية التي تم رصدها خلال المقابلات الميدانية واجتماعات سلسلة
-                    الإمداد وتوزيع التكاليف، مع بيان المسؤوليات الموكلة لكل دور:
+                    الإمداد والتكاليف، مع بيان المسؤوليات الموكلة لكل دور وعلاقته بدورة العمل:
                 </p>
 
-                <div class="data-table-wrapper">
+                <div class="data-table-wrapper" style="margin: 0.45rem 0 0.75rem 0;">
                     <table class="data-table">
                         <thead>
                             <tr>
@@ -2068,14 +1510,17 @@
                     </table>
                 </div>
 
-                <div class="callout-box">
+                <div class="callout-box" style="margin-bottom:0;">
                     <div class="callout-title">
                         <span>📌 ملاحظة حول الفصل بين الوظائف (Segregation of Duties)</span>
                     </div>
-                    <p style="font-size:0.78rem; line-height:1.5; margin-bottom:0;">
-                        يتطلب تطبيق نظام D365 Business Central المستهدف ضبط مصفوفة الصلاحيات والفصل الواضح بين الوظائف
-                        (خصوصاً بين طلب الشراء واعتماده، وبين الاستلام المخزني وإصدار أذون الصرف)، وحسم تبعية مهندسي
-                        الفحص المعملي لضمان استقلالية قرارات الجودة.
+                    <p style="font-size:0.77rem; line-height:1.5; margin-bottom:0;">
+                        يتطلب تطبيق نظام نظام إدارة الموارد (ERP) المستهدف ضبط مصفوفة الصلاحيات والفصل
+                        الواضح بين الوظائف
+                        (خصوصاً بين طلب الشراء واعتماده، وبين الاستلام المخزني وإصدار أذون الصرف)، بالإضافة إلى حسم
+                        تبعية مهندسي الفحص
+                        المعملي (هل تتبع إدارة التخطيط الصناعي أم إدارة جودة مستقلة) لضمان حوكمة القرارات
+                        الصناعية والمالية.
                     </p>
                 </div>
             </main>
@@ -2083,42 +1528,1117 @@
             <footer class="page-footer">
                 <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
                 <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 10 من 14</span>
+                <span>الصفحة 6 من 20</span>
             </footer>
         </section>
 
 
-        <!-- ================= PAGE 11: SECTION 8: CURRENT ISSUES & RISKS ================= -->
-        <section class="a4-page" id="page-11">
+        <!-- ================= PAGE 6: SECTION 5: PRODUCTION STAGES OVERVIEW ================= -->
+        <section class="a4-page" id="page-7">
             <header class="page-header">
                 <div class="page-header-logos">
                     <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
                 </div>
                 <div class="doc-meta-header">
-                    <strong>Section 8: Issues & Risks</strong>
+                    <strong>Section 5: Production Stages Overview</strong>
                     <span>v0.1</span>
                 </div>
             </header>
 
             <main class="page-content">
                 <h2 class="section-title">
-                    <span>8. المشكلات التشغيلية والمخاطر الموثقة</span>
-                    <span class="badge badge-risk">سجل القضايا المفتوحة</span>
+                    <span>5. مراحل الإنتاج ومخطط التدفق</span>
+                    <span class="badge badge-info">9 مراحل تصنيعية</span>
                 </h2>
 
-                <p style="margin-bottom: 0.65rem;">
-                    تم رصد عدد من المشكلات الحرجة والمخاطر التشغيلية القائمة في ممارسات العمل الحالية، والتي تمثل نقاط
-                    اختناق وتحديات رئيسية تؤثر على دقة التكاليف وكفاءة الإنتاج:
+                <p style="margin-bottom: 0.55rem; font-size:0.8rem;">
+                    تتفق كافة الأطراف المعنية على أن ناتج كل مرحلة في مصنع ترازّو يُعتبر محاسبياً وتشغيلياً بمثابة
+                    <strong>منتج نصف مصنّع (Semi-finished Good)</strong>. وفيما يلي المخطط المعتمد لتسلسل المراحل كما
+                    ورد في المقابلات وخطة المشروع:
                 </p>
 
-                <div class="data-table-wrapper">
+                <!-- Visual Interactive Production Pipeline Component -->
+                <div class="pipeline-flow">
+                    <div class="pipeline-step">
+                        <div class="step-num-circle">1</div>
+                        <div class="step-name-box">تخزين الخامات</div>
+                        <div class="step-desc-box">تخزين الرخام والخامات في جوالات (Big Bags) والأسمنت في سيلوهات رأسية
+                        </div>
+                        <div class="step-output-box">خامات مخزنة مُكوّدة</div>
+                    </div>
+
+                    <div class="pipeline-step">
+                        <div class="step-num-circle">2</div>
+                        <div class="step-name-box">التكسير والتجهيز</div>
+                        <div class="step-desc-box">تكسير الرخام بـ 4 كسارات تخصصية وفرزها إلى 5 فئات حجمية دقيقة</div>
+                        <div class="step-output-box">كسر رخام بمقاسات</div>
+                    </div>
+
+                    <div class="pipeline-step">
+                        <div class="step-num-circle">3</div>
+                        <div class="step-name-box">الخلط الآلي (Mixing)</div>
+                        <div class="step-desc-box">خلط الكسر مع الأسمنت، الماء، الإضافات الكيميائية والألوان في ميكسر 5
+                            طن</div>
+                        <div class="step-output-box">خلطة رطبة (دفعة 5 طن)</div>
+                    </div>
+
+                    <div class="pipeline-step">
+                        <div class="step-num-circle">4</div>
+                        <div class="step-name-box">الصب في القالب</div>
+                        <div class="step-desc-box">صب الخلطة على دفعتين متتاليتين (5+5 طن) لتشكيل بلوك واحد بوزن 10 طن
+                        </div>
+                        <div class="step-output-box">بلوك خام 10 طن</div>
+                    </div>
+
+                    <div class="pipeline-step">
+                        <div class="step-num-circle">5</div>
+                        <div class="step-name-box">سحب الهواء (Vacuum)</div>
+                        <div class="step-desc-box">معالجة القالب بغرفة الفاكيوم لسحب الهواء والماء الفائض مع دوران
+                            واهتزاز</div>
+                        <div class="step-output-box">بلوك مصمت متماسك</div>
+                    </div>
+
+                    <div class="pipeline-step">
+                        <div class="step-num-circle">6</div>
+                        <div class="step-name-box">الفك والمعالجة (Curing)</div>
+                        <div class="step-desc-box">فك جوانب القالب بعد 24 ساعة، ثم ترك البلوك للمعالجة والتصلب من 14 إلى
+                            28 يوماً</div>
+                        <div class="step-output-box">بلوك معالج جاهز للقطع</div>
+                    </div>
+
+                    <div class="pipeline-step">
+                        <div class="step-num-circle">7</div>
+                        <div class="step-name-box">التقطيع بمناشير</div>
+                        <div class="step-desc-box">تقطيع البلوك المعالج بواسطة 4 مناشير كهربائية متعددة الأسلحة إلى
+                            ألواح هندسية</div>
+                        <div class="step-output-box">ألواح خامة (Slabs)</div>
+                    </div>
+
+                    <div class="pipeline-step">
+                        <div class="step-num-circle">8</div>
+                        <div class="step-name-box">الجلي والتلميع</div>
+                        <div class="step-desc-box">معالجة الألواح بالريزن والمرور بثلاث طبقات جلخ وتلميع (لامع، نصف
+                            لامع، خشن)</div>
+                        <div class="step-output-box">لوح ترازّو مصقول</div>
+                    </div>
+
+                    <div class="pipeline-step">
+                        <div class="step-num-circle">9</div>
+                        <div class="step-name-box">قطع إضافي وتغليف</div>
+                        <div class="step-desc-box">قص تفصيلي خاص بالماكينة حسب مواصفات العميل، ثم التغليف للبيع النهائي
+                        </div>
+                        <div class="step-output-box">منتج نهائي مُغلّف</div>
+                    </div>
+                </div>
+
+                <div class="callout-box" style="margin-bottom:0;">
+                    <div class="callout-title">
+                        <span>🔍 ملاحظة وتعارض حول حصر المراحل الإنتاجية</span>
+                    </div>
+                    <p style="font-size:0.77rem; line-height:1.5; margin-bottom:0;">
+                        نتحدث عن خطة المشروع المعتمدة في وجود تسع مراحل تنتهي بالتلميع، . تُعد المرحلة التاسعة المقترحة
+                        (القطع الإضافي والتغليف) ونقطة التوقف الرسمية للوحدات نصف المصنعة وتبدأ هنا مرحلة المنتج التام .
+                    </p>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 7 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 7: SECTION 5: DETAILED OPERATIONS (4.1 - 4.2) ================= -->
+        <section class="a4-page" id="page-8">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 5: Detailed Operations (Part 1)</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>5. تفاصيل العمليات الإنتاجية (1/3)</span>
+                    <span class="badge badge-info">الخامات والتكسير</span>
+                </h2>
+
+                <h3 class="subsection-title">4.1 الخامات والتخزين (Raw Materials & Storage)</h3>
+                <ul>
+                    <li>
+                        <strong>الخامة الأساسية:</strong> رخام مكسّر جاهز (كسر)، أو بلوكات رخام كاملة تُكسَّر داخل
+                        المصنع. يتم شراؤها إما من السوق المحلي أو عبر الاستيراد من الخارج، نظراً لأن بعض الأنواع المميزة
+                        (مثل رخام <em>التاسوس الأبيض اليوناني - Thassos</em>) غير متوفرة في المحاجر المحلية.
+                    </li>
+                    <li>
+                        <strong>طبيعة المشتريات والحالة:</strong> ذُكر في المقابلات أن الشراء قد يكون «جديداً أو
+                        مستعملاً، من مصر أو مستورداً»
+                        <span class="badge badge-query">[؟ هل ينطبق ذلك على الخامة أم على الجوالات Big Bags؟]</span>.
+                        والمعلومة المسجلة توضح أن المستعمل المحلي من الجوالات أنظف وأجود من الجوالات المستوردة.
+                    </li>
+                    <li>
+                        <strong>المواد الكيميائية والمساعدة:</strong> تشمل أسمنت، إضافات تلدين ومحسنات تشغيلية
+                        (Plasticizer)، ألوان وأكاسيد، وريزن للتشطيب.
+                        <span class="badge badge-query">[؟ النص الأصلي ذكر «مواد دخان»، ويُرجَّح بقوة أنها تصحيف لكلمة
+                            «مواد خام» وتتطلب تدقيقاً رسمياً]</span>.
+                    </li>
+                    <li>
+                        <strong>سياسة التخزين والأوعية:</strong> تُخزَّن المواد الحصوية والخامات في جوالات كبيرة (Big
+                        Bags)، بينما يُخزن الأسمنت داخل سيلوهات رأسية مخصصة.
+                        تمتلك الجوالات كوداً ورقماً مخزنياً، ويُخطط لاستخدام الجوال أكثر من مرة
+                        <span class="badge badge-planned">مخطط: مرتين أو ثلاثاً حسب الحالة الفنية للجوال، ولم تُجرب
+                            بعد</span>.
+                    </li>
+                </ul>
+
+                <h3 class="subsection-title">4.2 التكسير والتجهيز (Crushing & Sizing)</h3>
+                <p style="margin-bottom: 0.45rem; font-size:0.8rem;">
+                    يمتلك المصنع <strong>4 كسّارات ميكانيكية</strong> ويتعامل مع حوالي <strong>10 أنواع رئيسية من
+                        الخامات</strong>.
+                    وقد تم تخصيص كل كسارة لاستخدام محدد بدقة منعاً لتلوث الألوان والخلطات (وفق نوع الخامة، اللون،
+                    المقاس، والمنتج المستهدف).
+                </p>
+
+                <div class="data-table-wrapper" style="margin: 0.4rem 0 0.65rem 0;">
                     <table class="data-table">
                         <thead>
                             <tr>
-                                <th style="width: 12%;">الكود</th>
-                                <th style="width: 32%;">المشكلة / الخطر المرصود</th>
-                                <th style="width: 44%;">الأثر الفعلي على التكلفة والتشغيل والمخزون</th>
-                                <th style="width: 12%;">المصدر</th>
+                                <th style="width: 25%;">فئة المقاس الحجمي</th>
+                                <th style="width: 25%;">النطاق بالمليمتر <span class="badge badge-query">[؟ وحدة
+                                        القياس]</span></th>
+                                <th style="width: 50%;">الاستخدام والتحكم عبر الـ Mix Design</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>الفئة الأولى (G1)</strong></td>
+                                <td>0.1 – 0.2</td>
+                                <td>بودرة ناعمة وحبيبات دقيقة لملء الفراغات البينية</td>
+                            </tr>
+                            <tr>
+                                <td><strong>الفئة الثانية (G2)</strong></td>
+                                <td>0.2 – 4.0</td>
+                                <td>كسر متوسط دقيق لتحقيق التماسك السطحي</td>
+                            </tr>
+                            <tr>
+                                <td><strong>الفئة الثالثة (G3)</strong></td>
+                                <td>4.0 – 6.0</td>
+                                <td>كسر متوسط قياسي لتشكيل نسيج الترازّو الأساسي</td>
+                            </tr>
+                            <tr>
+                                <td><strong>الفئة الرابعة (G4)</strong></td>
+                                <td>6.0 – 10.0</td>
+                                <td>حبيبات كبيرة تظهر كعروق وقطع زخرفية في اللوح</td>
+                            </tr>
+                            <tr>
+                                <td><strong>الفئة الخامسة (G5)</strong></td>
+                                <td>10.0 – 20.0</td>
+                                <td>قطع خشنة للموديلات المعمارية الحديثة (Venetian Style)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout-box" style="margin-bottom:0; padding:0.5rem 0.8rem;">
+                    <p style="font-size:0.77rem; color:#475569; margin-bottom:0;">
+                        <em>* ملاحظة فنية: يحدد تصميم الخلطة (Mix Design) نسبة كل مقاس من هذه الفئات الخمس لكل موديل
+                            ومنتج نهائي مطلوب تصنيعه.
+                            وقد تم السؤال سابقاً عن وجود «ثلاث فئات» بينما أكد الفنيون وجود 5 فئات كاملة.</em>
+                    </p>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 8 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 8: SECTION 5: DETAILED OPERATIONS (4.3 - 4.4) ================= -->
+        <section class="a4-page" id="page-9">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 5: Detailed Operations (Part 2)</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>5. تفاصيل العمليات الإنتاجية (2/3)</span>
+                    <span class="badge badge-info">الخلط، الصب، والفاكيوم</span>
+                </h2>
+
+                <h3 class="subsection-title">4.3 الخلط والصب (Mixing & Mold Casting)</h3>
+                <ul>
+                    <li>
+                        <strong>التغذية والوزن الآلي:</strong> تدخل مكونات الأسمنت (تلقائياً من السيلوهات)، والمياه
+                        المحسوبة بدقة،
+                        والإضافات الكيميائية والـ Plasticizer، والألوان، وكسر الرخام إلى الميكسر بأوزان مبرمجة آلياً وفق
+                        وصفة الـ Mix Design.
+                    </li>
+                    <li>
+                        <strong>طاقة الميكسر وحجم البلوك:</strong> تبلغ السعة القصوى للميكسر <strong>5 أطنان</strong>،
+                        بينما يبلغ الحجم الهندسي للبلوك المطلوب
+                        <strong>10 أطنان</strong>؛ لذلك يُنفَّذ إنتاج البلوك الواحد على <strong>دفعتين متتاليتين (5 طن +
+                            5 طن)</strong> تُصبان في نفس القالب.
+                    </li>
+                    <li>
+                        <strong>استحالة التخزين الوسيط:</strong> لا يوجد أي مخزون نصف مصنع قبل تشكيل البلوك. الخلطة
+                        المجهزة يجب أن تُصب بالكامل داخل القالب دون أي تأخير،
+                        وإلا ستتلف وتُهدر بالكامل نتيجة بدء تفاعل التصلب للأسمنت (Risk of Setting).
+                    </li>
+                    <li>
+                        <strong>استراتيجية الإنتاج:</strong> يتبع المصنع استراتيجية <strong>الإنتاج حسب الطلب (Make to
+                            Order - MTO)</strong>،
+                        وتُنتج البلوكات تلبية لأوامر بيع محددة مع إمكانية الإنتاج للمخزون.
+                    </li>
+                    <li>
+                        <strong>سيارة القوالب الآلية:</strong> تتولى عربة نقل/سيارة أوتوماتيكية متخصصة وضع القالب المفرغ
+                        تحت فتحة الصب،
+                        حيث تُفرَّغ الخلطة بدقة داخل القالب لتشكيل البلوك الهندسي.
+                    </li>
+                </ul>
+
+                <!-- Visual Box of 5t+5t batching -->
+                <div
+                    style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:8px; padding:0.55rem 0.9rem; margin:0.5rem 0;">
+                    <strong style="color:var(--primary); font-size:0.8rem; display:block; margin-bottom:0.3rem;">
+                        ⚙️ ديناميكية تشكيل البلوك في خط الصب:
+                    </strong>
+                    <div
+                        style="display:flex; align-items:center; justify-content:space-around; text-align:center; font-size:0.75rem;">
+                        <div
+                            style="background:white; border:1px solid #cbd5e1; border-radius:6px; padding:0.35rem 0.75rem;">
+                            <div style="font-weight:800; color:var(--secondary);">الدفعة الأولى (Batch 1)</div>
+                            <div>5 أطنان ميكسر</div>
+                        </div>
+                        <div style="font-size:1.1rem; color:#94a3b8; font-weight:800;">+</div>
+                        <div
+                            style="background:white; border:1px solid #cbd5e1; border-radius:6px; padding:0.35rem 0.75rem;">
+                            <div style="font-weight:800; color:var(--secondary);">الدفعة الثانية (Batch 2)</div>
+                            <div>5 أطنان ميكسر</div>
+                        </div>
+                        <div style="font-size:1.1rem; color:#94a3b8; font-weight:800;">➔</div>
+                        <div
+                            style="background:#fffbeb; border:1px solid #fde68a; border-radius:6px; padding:0.35rem 0.75rem;">
+                            <div style="font-weight:800; color:#b45309;">قالب البلوك النهائي</div>
+                            <div>10 أطنان مصموتة</div>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="subsection-title">4.4 سحب الهواء والمعالجة (Vacuum De-airing & Curing)</h3>
+                <ul>
+                    <li>
+                        <strong>تقنية الفاكيوم المتقدمة:</strong> يدخل القالب المحمل بالخلطة ماكينة تفريغ الهواء (Vacuum
+                        Chamber) لسحب كامل فقاعات الهواء
+                        والماء الفائض المحبوس، بالتزامن مع تطبيق حركة دوران واهتزاز ميكانيكي بقوى وترددات متغيرة لمنع
+                        تشكل أي فجوات داخلية في البلوك.
+                    </li>
+                    <li>
+                        <strong>فك الجوانب:</strong> بعد انقضاء <strong>24 ساعة</strong> من الصب وسحب الهواء، يتم فك
+                        الجوانب المعدنية للقالب ويبقى البلوك مستقراً على قاعدته.
+                    </li>
+                    <li>
+                        <strong>فترة المعالجة والتصلب (Curing Period):</strong> يُترك البلوك المفكوك في ساحة المعالجة
+                        لمدة <strong>14 يوماً على الأقل</strong> قبل نقله للمناشير
+                        <span class="badge badge-query">[نقطة تحتاج تأكيداً: هل مدة المعالجة تتراوح بين 14 و 28 يوماً أم
+                            14 يوماً فقط]</span>.
+                    </li>
+                </ul>
+
+                <div class="callout-box warning" style="margin-bottom:0; padding:0.5rem 0.8rem;">
+                    <div class="callout-title" style="font-size:0.8rem; margin-bottom:0.2rem;">
+                        <span>⚠️ الأثر الفني لفترة المعالجة (Curing Period)</span>
+                    </div>
+                    <p style="font-size:0.76rem; line-height:1.45; margin-bottom:0;">
+                        قطع البلوك قبل اكتمال الإماهة الكيميائية للأسمنت يؤدي إلى تفتت الحواف وشرخ الألواح وتلف أسلحة
+                        المناشير، في حين أن الإطالة غير المحسوبة
+                        ترفع تكلفة التخزين الوسيط وتبطئ دورة رأس المال التشغيلي للمصنع.
+                    </p>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 9 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 9: SECTION 5: DETAILED OPERATIONS (4.5 - 4.6) ================= -->
+        <section class="a4-page" id="page-10">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 5: Detailed Operations (Part 3)</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>5. تفاصيل العمليات الإنتاجية (3/3)</span>
+                    <span class="badge badge-info">التقطيع، التلميع، والجودة</span>
+                </h2>
+
+                <h3 class="subsection-title">4.5 التقطيع والتلميع (Cutting, Polishing & Custom Sizing)</h3>
+                <ul>
+                    <li>
+                        <strong>مناشير التقطيع:</strong> يمتلك المصنع <strong>4 مناشير ضخمة متعددة الشفرات (Gang
+                            Saws)</strong> تتولى تقطيع البلوك المعالج بالكامل
+                        إلى ألواح هندسية متوازية (Slabs). وتُصنف هذه الألواح في النظام المحاسبي كمنتجات نصف مصنعة.
+                    </li>
+                    <li>
+                        <strong>خط التلميع ومعالجة السطح:</strong> تمر الألواح عبر خط تلميع آلي يخضع لثلاث طبقات جلخ
+                        وتلميع متتالية تتضمن تطبيق طبقة من الريزن المعالج
+                        لسد المسام المجهرية وإبراز ألوان كسر الرخام.
+                    </li>
+                    <li>
+                        <strong>درجات التشطيب المتاحة (Finishing Degrees):</strong>
+                        ينتج خط التلميع ثلاثة مستويات تشطيب رئيسية:
+                        <span style="font-size:0.8rem; color:#0f172a;"><strong>(1) لامع (Polished)</strong> عاكس
+                            للاستخدامات الفاخرة | <strong>(2) نصف لامع (Honed)</strong> مطفي ناعم | <strong>(3) خشن
+                                (Brushed)</strong> محبب مانع للانزلاق.</span>
+                    </li>
+                    <li>
+                        <strong>ماكينة القص الخاص (Custom Sizing):</strong> يتوفر ماكينة 5-Axis متقدمة لقص الألواح إلى
+                        بلاطات ومقاسات وأشكال هندسية خاصة
+                        <span class="badge badge-query">[؟ اللفظ «الجينيا» غير واضح في تفريغ 003]</span>.
+                    </li>
+                </ul>
+
+                <h3 class="subsection-title">4.6 الفحص وضبط الجودة (Testing & Quality Assurance)</h3>
+                <p style="margin-bottom: 0.45rem; font-size:0.8rem;">
+                    يتوفر في مصنع ترازّو <strong>معمل متكامل لضبط الجودة في الموقع</strong>. وتشمل بروتوكولات الفحص
+                    المتبعة محورين رئيسيين:
+                </p>
+
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin-bottom: 0.65rem;">
+                    <div
+                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.55rem 0.75rem;">
+                        <strong style="color:var(--primary); font-size:0.78rem; display:block; margin-bottom:0.25rem;">
+                            👁️ الفحص البصري والسطحي (Visual Inspection):
+                        </strong>
+                        <ul style="padding-right:1rem; margin-bottom:0; font-size:0.75rem; line-height:1.45;">
+                            <li>قياس درجة اللمعان السطحي بواسطة <em>جهاز مقياس اللمعان (Glossmeter)</em>.</li>
+                            <li>فحص المسامات السطحية والفقاعات والعيوب اللونية.</li>
+                            <li>مطابقة توزيع كسر الرخام وتجانسه مع عينة الموديل المعتمدة.</li>
+                        </ul>
+                    </div>
+
+                    <div
+                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.55rem 0.75rem;">
+                        <strong style="color:var(--primary); font-size:0.78rem; display:block; margin-bottom:0.25rem;">
+                            🔬 الفحص المعملي والميكانيكي (Lab Testing):
+                        </strong>
+                        <ul style="padding-right:1rem; margin-bottom:0; font-size:0.75rem; line-height:1.45;">
+                            <li>اختبار مقاومة الانضغاط والقوة الميكانيكية بواسطة <em>ماكينة الضغط</em>.</li>
+                            <li>القياس الرقمي الدقيق لسُمك الألواح عبر <em>جهاز قياس السُمك</em>.</li>
+                            <li>فحص امتصاص الماء ومقاومة الاحتكاك والتآكل.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="callout-box warning" style="margin-bottom:0; padding:0.5rem 0.8rem;">
+                    <div class="callout-title" style="font-size:0.8rem; margin-bottom:0.2rem;">
+                        <span>❓ نقطة الغموض حول موضع الفحص في مسار الإنتاج</span>
+                    </div>
+                    <p style="font-size:0.76rem; line-height:1.45; margin-bottom:0;">
+                        على الرغم من وجود معمل الجودة والأجهزة الميدانية، فإن <strong>نقطة الفحص الإلزامية
+                            بالتحديد</strong> غير موثقة إجرائياً:
+                        هل يتم الفحص بعد مرحلة التقطيع مباشرة أم بعد التلميع النهائي؟ كما أن تبعية مهندسي الفحص (هل تتبع
+                        إدارة التخطيط الصناعي أم إدارة جودة مستقلة)
+                        ما زالت بحاجة إلى حسم تنظيمي لاعتمادها بنظام ERP.
+                    </p>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 10 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 10: SECTION 6: PLANNING & PROCUREMENT ================= -->
+        <section class="a4-page" id="page-11">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 6: Planning & Procurement</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>6. التخطيط والمشتريات وإجراءات الاستلام</span>
+                    <span class="badge badge-info">دورة التوريد السداسية</span>
+                </h2>
+
+                <p style="margin-bottom: 0.55rem; font-size:0.8rem;">
+                    تسير دورة التخطيط وتوفير الاحتياجات للمصنع عبر ست خطوات إجرائية موثقة وفق ما أدلى به مسؤولو سلسلة
+                    الإمداد والتخطيط:
+                </p>
+
+                <div class="data-table-wrapper" style="margin: 0.45rem 0 0.75rem 0;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 7%;">#</th>
+                                <th style="width: 45%;">الخطوة والوصف الإجرائي</th>
+                                <th style="width: 26%;">الجهة المسؤولة</th>
+                                <th style="width: 22%;">المستند المعتمد</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1</strong></td>
+                                <td>
+                                    <strong>تحويل الأهداف إلى خطة إنتاج:</strong>
+                                    تحويل مستهدفات المبيعات وأوامر البيع للعملاء إلى خطة إنتاج مصنعية
+                                    <span class="badge badge-query">[؟ آلية التحويل الحالية غير مدققة]</span>
+                                </td>
+                                <td>إدارة التخطيط</td>
+                                <td>خطة الإنتاج (Production Plan)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2</strong></td>
+                                <td>
+                                    <strong>طلب احتياجات المصنع:</strong>
+                                    يطلب المخطط الخامات وفق خطة الإنتاج، أو حسب أمر بيع محدد، أو يطلب قطع الغيار اللازمة
+                                </td>
+                                <td>مخطط إنتاج / مخطط قطع غيار وخدمات</td>
+                                <td>طلب شراء (Purchase Requisition - PR)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3</strong></td>
+                                <td>
+                                    <strong>الاعتماد الفني والإداري:</strong>
+                                    مراجعة طلب الشراء واعتماده من رئيس التخطيط ثم اعتماده رسمياً من مدير المصنع
+                                </td>
+                                <td>رئيس التخطيط ومدير المصنع</td>
+                                <td>طلب شراء معتمد (Approved PR)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4</strong></td>
+                                <td>
+                                    <strong>استدراج العروض والتفاوض:</strong>
+                                    إذا وجد عقد توريد سنوي سارٍ يتم التنفيذ مباشرة؛ وإلا يُرسل استدراج عروض لـ 3 موردين،
+                                    ويُعد جدول مقارنة وتفاوض
+                                </td>
+                                <td>مسؤول المشتريات (Buyer)</td>
+                                <td>استدراج عروض (RFQ) وجدول مقارنة أسعار</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5</strong></td>
+                                <td>
+                                    <strong>إصدار أمر الشراء والاعتماد الرباعي:</strong>
+                                    إصدار PO واعتماده من مدير المشتريات، مدير سلسلة الإمداد، الإدارة المالية (التدفق
+                                    النقدي)، ومدير المصنع، ثم إرساله للمورد
+                                </td>
+                                <td>المشتريات، سلسلة الإمداد، المالية، مدير المصنع</td>
+                                <td>أمر شراء رسمي (Purchase Order - PO)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>6</strong></td>
+                                <td>
+                                    <strong>التسليم والتوريد للمخزن:</strong>
+                                    يقوم المورد بشحن المواد إلى مستودعات المصنع بموجب رقم أمر الشراء المحدد
+                                </td>
+                                <td>المورد / أمين المخزن</td>
+                                <td>رقم أمر الشراء وإذن التسليم</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="subsection-title">إجراءات الاستلام والفحص المخزني (Receiving & Inspection Protocols)</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem;">
+                    <div
+                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.55rem 0.75rem;">
+                        <strong style="color:var(--primary); font-size:0.78rem; display:block; margin-bottom:0.25rem;">
+                            📦 استلام قطع الغيار والمهمات:
+                        </strong>
+                        <p style="font-size:0.75rem; line-height:1.45; margin-bottom:0;">
+                            يقوم أمين المخزن بمطابقة الأصناف الواردة ظاهرياً مع أمر الشراء (PO)، ثم يقوم الفني المختص أو
+                            طالب الصنف بفحصه فنياً
+                            والتوقيع على <strong>تقرير فحص معتمد</strong>. بعد ثبوت المطابقة، يستلم المخزن الصنف رسمياً،
+                            ويتم تكويده ووضعه في مكانه المخصص (Bin Location).
+                        </p>
+                    </div>
+
+                    <div
+                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.55rem 0.75rem;">
+                        <strong style="color:var(--primary); font-size:0.78rem; display:block; margin-bottom:0.25rem;">
+                            🧱 استلام الخامات والرخام والأسمنت:
+                        </strong>
+                        <p style="font-size:0.75rem; line-height:1.45; margin-bottom:0;">
+                            يتم إخطار إدارة المخازن مسبقاً بالشحنات الكبيرة من الخامات والرخام. وقبل السماح بدخول أي
+                            شحنة (سواء كانت مشتراة محلياً أو مستوردة)
+                            إلى ساحة التخزين، يقوم <strong>مهندسو ضبط الجودة بسحب عينات وفحصها والتصريح بقبولها</strong>
+                            وإدخالها المخزن.
+                        </p>
+                    </div>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 11 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 11: SECTION 7: WAREHOUSING & FLOOR ISSUANCE ================= -->
+        <section class="a4-page" id="page-12">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 7: Warehousing & Floor Issuance</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>7. المخازن والصرف للتصنيع</span>
+                    <span class="badge badge-info">قسم جديد (v0.1)</span>
+                </h2>
+
+                <div class="callout-box">
+                    <div class="callout-title">
+                        <span>📦 آلية إصدار أوامر الشغل والصرف المخزني</span>
+                    </div>
+                    <p style="font-size:0.8rem; line-height:1.55;">
+                        يصدر <strong>أمر شغل (Job Order)</strong> لتصنيع تصميم أو موديل معين، وتُصرف المواد الخام من
+                        المخزن بموجب هذا الأمر
+                        وفق قائمة المواد المعتمدة <strong>(Bill of Materials - BOM)</strong>. ومع ذلك، لا تزال الجهة
+                        المسؤولة بدقة عن إصدار
+                        أمر الشغل التنفيذي (هل هي إدارة التخطيط أم إدارة الإنتاج) غير محددة صراحة في الممارسات الحالية
+                        <span class="badge badge-query">[؟ من يصدر أمر الشغل غير محدد]</span>.
+                    </p>
+                </div>
+
+                <h3 class="subsection-title">قواعد وحقائق الصرف التشغيلي الموثقة</h3>
+                <ul>
+                    <li>
+                        <strong>تناقض وحدة صرف الجوالات:</strong> ذُكر في إفادات الملاحظات الميدانية أن الصرف يتم
+                        بالكيلوجرام مباشرة من المخزن إلى التصنيع،
+                        بينما أُكد في اجتماعات سلسلة الإمداد أن الجوالات (Big Bags) تُصرف
+                        <strong>«بالعدد»</strong> لأن وزن الجوال الفعلي
+                        غير دقيق ويتراوح تقريبياً بين طن وطن ونصف
+                        <span class="badge badge-query">[تعارض جوهري يحتاج حسم الإدارة]</span>.
+                    </li>
+                    <li>
+                        <strong>معضلة حصر الموازين في المصنع:</strong> الميزان الدقيق الوحيد يقع قبل ماكينة الخلط
+                        (الميكسر) فقط،
+                        <strong>ولا يتوفر أي ميزان دقيق في المخزن</strong> لوزن ما يُصرف إلى خط الإنتاج أو لوزن ما يرجع
+                        من الجوالات بعد انتهاء الخلطة.
+                    </li>
+                    <li>
+                        <strong>تغذية الأسمنت والمحسنات:</strong> الأسمنت ومادة التلدين (Plasticizer) يُوزنان آلياً
+                        ويدخلان السيلوهات ثم الميكسر تلقائياً
+                        وفق نسب الوصفة وتصميم الخلطة (Mix Design) المبرمج في نظام التحكم.
+                    </li>
+                    <li>
+                        <strong>تفريغ الحوامل العشرة:</strong> بعد اكتمال الإنتاج، أُشير إلى أنه يتم تفريغ ما أُطلق عليه
+                        «الحوامل العشرة»
+                        <span class="badge badge-query">[؟ غير واضح في التفريغ: هل هي منصات الجوالات المرتجعة؟ وكيف
+                            تُسجَّل الكميات المتبقية وتُقيد مخزنياً؟]</span>.
+                    </li>
+                    <li>
+                        <strong>أول مرحلة لتخزين المنتج:</strong> المرحلة الأولى لتخزين المنتج بعد اكتمال الصب والمعالجة
+                        هي <strong>«البلوك» (10 أطنان)</strong>،
+                        حيث يُخزن في ساحة المعالجة قبل أن يُقطع إلى ألواح.
+                    </li>
+                </ul>
+
+                <div class="callout-box warning" style="margin-bottom:0;">
+                    <div class="callout-title">
+                        <span>⚠️ الأثر الرقابي لغياب موازين الصرف المخزني</span>
+                    </div>
+                    <p style="font-size:0.77rem; line-height:1.5; margin-bottom:0;">
+                        إن غياب الميزان عند الصرف من المستودع واعتماد الوزن فقط عند الميكسر يجعل من المستحيل إجراء
+                        مطابقة مخزنية ورقابية بين الكميات
+                        المنصرفة دفترياً والكميات المستهلكة فعلياً في أمر الشغل، مما يُنشئ فروق جرد مجهولة المصدر ويُعقد
+                        احتساب تكلفة البلوك الفعلية.
+                    </p>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 12 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 12: SECTION 8: MAINTENANCE & SPARE PARTS ================= -->
+        <section class="a4-page" id="page-13">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 8: Maintenance & Spare Parts</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>8. الصيانة وإدارة قطع الغيار</span>
+                    <span class="badge badge-info">تحميل التكلفة على مستوى الماكينة</span>
+                </h2>
+
+                <div class="callout-box">
+                    <div class="callout-title">
+                        <span>🔧 دورة أوامر العمل وتتبع تكاليف الماكينات</span>
+                    </div>
+                    <p style="font-size:0.8rem; line-height:1.55; margin-bottom:0.4rem;">
+                        تبدأ دورة الصيانة بإصدار <strong>طلب عمل (Work Request)</strong> من قبل مخطط قطع الغيار
+                        والخدمات،
+                        سواء للصيانة الوقائية الدورية المجدولة أو للصيانة الطارئة للأعطال الميدانية، ويتحول هذا الطلب
+                        إلى <strong>أمر عمل معتمد (Work Order)</strong>.
+                    </p>
+                    <ul style="padding-right:1.25rem; font-size:0.77rem; line-height:1.5; margin-bottom:0;">
+                        <li><strong>صرف قطع الغيار:</strong> تُصرف قطع الغيار الميكانيكية والكهربائية من المخزن مباشرة
+                            على أمر العمل الخاص بالماكينة المحددة.</li>
+                        <li><strong>صرف مستلزمات التشغيل:</strong> أسلحة المناشير (Diamond Blades)، أجهزة الكسارات،
+                            وأحجار الجلي والتلميع تُصرف هي الأخرى على كود الماكينة المحددة.</li>
+                        <li><strong>المردود المحاسبي:</strong> يسمح هذا الإجراء بحساب التكلفة التشغيلية وصيانة كل ماكينة
+                            بشكل مستقل وتاريخي دقيق عبر مراكز التكلفة.</li>
+                    </ul>
+                </div>
+
+                <h3 class="subsection-title">مجالات الصيانة الرئيسية والأصول الحرجة</h3>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.65rem; margin-bottom: 0.65rem;">
+                    <div
+                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.55rem 0.75rem;">
+                        <strong style="color:var(--primary); font-size:0.78rem; display:block; margin-bottom:0.25rem;">
+                            ⚙️ صيانة المناشير ومحطة التلميع:
+                        </strong>
+                        <p style="font-size:0.75rem; line-height:1.45; margin-bottom:0;">
+                            تتطلب المناشير الأربعة متابعة مستمرة لشد الشفرات وضغط المياه وتزييت الكراسي وتغيير الأسلحة
+                            الماسية عند وصولها لحد التآكل،
+                            كما يحتاج خط التلميع لتبديل رؤوس الجلخ ومعايرة ضغط رؤوس التلميع الثلاثة.
+                        </p>
+                    </div>
+
+                    <div
+                        style="background:#f8fafc; border:1px solid #cbd5e1; border-radius:6px; padding:0.55rem 0.75rem;">
+                        <strong style="color:var(--primary); font-size:0.78rem; display:block; margin-bottom:0.25rem;">
+                            🌪️ صيانة ماكينة الفاكيوم والكسارات:
+                        </strong>
+                        <p style="font-size:0.75rem; line-height:1.45; margin-bottom:0;">
+                            تخضع غرفة الفاكيوم لاختبارات إحكام العزل وتغيير فلاتر الهواء وصيانة مواتير الاهتزاز
+                            والتدوير،
+                            في حين تشمل صيانة الكسارات الأربع تبديل أجزاء التكسير (Jaw Plates) وضبط خلوص فئات المقاس
+                            الحجمي.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="callout-box warning" style="margin-bottom:0;">
+                    <div class="callout-title">
+                        <span>⚠️ متطلبات تفعيل الصيانة في نظام ERP المستهدف</span>
+                    </div>
+                    <p style="font-size:0.77rem; line-height:1.5; margin-bottom:0;">
+                        لتطبيق نظام الصيانة بفاعلية في نظام ERP، يجب إدخال سجل كامل للمعدات (Asset Cards)،
+                        وربط خطط الصيانة الوقائية بعدادات ساعات التشغيل أو كميات الإنتاج المقطوعة (م²)، وتحديد قوائم قطع
+                        الغيار الحرجة (Critical Spares)
+                        التي يتطلب نفادها إصدار تنبيهات شراء تلقائية.
+                    </p>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 13 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 13: SECTION 9: CONSUMABLES & WATER TREATMENT ================= -->
+        <section class="a4-page" id="page-14">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 9: Consumables & Water Treatment</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>9. مستلزمات الإنتاج ومعالجة المياه</span>
+                    <span class="badge badge-info">قسم إضافي</span>
+                </h2>
+
+                <h3 class="subsection-title">8.1 مستلزمات الإنتاج وأعمار الأدوات (Production Consumables)</h3>
+                <div class="data-table-wrapper" style="margin: 0.4rem 0 0.65rem 0;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;">البند والموضوع</th>
+                                <th style="width: 48%;">ما ورد في نقاشات واجتماعات المصنع</th>
+                                <th style="width: 27%;">الحالة التوثيقية والقيود</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>حفرة التجميع (Sump Pit)</strong></td>
+                                <td>تجميع المياه العادمة الناتجة عن خطوط الجلي ومناشير القص والمحملة بغبار وحبيبات
+                                    الرخام</td>
+                                <td>يتم السحب آلياً بواسطة غواطس طرد ثقيلة إلى محطة الترسيب والمعالجة</td>
+                            </tr>
+                            <tr>
+                                <td><strong>خزانات الترسيب (Clarifiers)</strong></td>
+                                <td>فصل العوالق الصلبة وتجميع الرواسب الطينية في قاع مخروطي</td>
+                                <td>حقن مستمر للمواد الكيميائية المخثرة لتسريع عملية الترسيب</td>
+                            </tr>
+                            <tr>
+                                <td><strong>مكبس الفلتر (Filter Press)</strong></td>
+                                <td>عصر وتجفيف الحمأة والطمي تحت ضغط هيدروليكي عالي لتكوين كعكة طمي جافة</td>
+                                <td>استرجاع ما يزيد عن 90% من المياه الصافية وإعادة ضخها للإنتاج</td>
+                            </tr>
+                            <tr>
+                                <td><strong>شبكة التدوير المغلقة</strong></td>
+                                <td>إعادة تدوير المياه المعالجة النقية وضخها لتبريد شفرات المناشير وأحجار الجلي</td>
+                                <td>دورة هيدروليكية مغلقة ومستدامة توفر استهلاك المياه العذبة</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <h3 class="subsection-title">8.2 دورة معالجة المياه الصناعية (Industrial Water Treatment Cycle)</h3>
+                <p style="font-size:0.77rem; line-height:1.48; margin-bottom:0.4rem;">
+                    تعتمد العمليات الإنتاجية على دورة مياه مغلقة لمعالجة مياه المناشير والتلميع المحملة ببرادة الرخام،
+                    وتتم وفق الخطوات التالية:
+                </p>
+                <ul style="font-size:0.76rem; line-height:1.45; margin-bottom:0.45rem;">
+                    <li>مياه المناشير والتلميع تتجمع في مجارٍ أرضية مخصصة وتتدفق إلى <strong>حفرة تجميع رئيسية (Sump
+                            Pit)</strong>.</li>
+                    <li>يُضاف مركب مانع الرغوة (Anti-foaming) ومركب PAC في الحفرة لمقاومة الاضطراب وتجهيز الترسيب.</li>
+                    <li>تُضخ المياه إلى خزانات ترسيب كبيرة يُحقن فيها <strong>المروّق (Flocculant)</strong> فيتكتل الطين
+                        ويترسب في القاع.</li>
+                    <li>تفيض المياه الرائقة النظيفة إلى خزانين تاليين كمياه تشغيل نقية وتُعاد بالكامل إلى الماكينات
+                        للتشغيل.</li>
+                    <li>يُضخ الطين الراسب إلى <strong>مكبس الفلتر (Filter Press)</strong> فيعصره؛ ويعود الماء المعصور
+                        للحفرة، بينما تخرج الطينة الجافة.</li>
+                </ul>
+
+                <div class="data-table-wrapper" style="margin: 0.35rem 0 0.5rem 0;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;">المادة الكيميائية</th>
+                                <th style="width: 32%;">الغرض الوظيفي والمعالجة</th>
+                                <th style="width: 43%;">طريقة الإضافة وجرعات الحقن المذكورة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>مادة البوليمر المندف (Flocculant)</strong></td>
+                                <td>تجميع وتكتيل الجزيئات الدقيقة من غبار الرخام والأسمنت لتكوين رقائق ثقيلة يسهل
+                                    ترسيبها</td>
+                                <td>تحضير في خزان خلط خاص وحقن بمعدل تدفق محسوب مع تيار المياه الداخلة</td>
+                            </tr>
+                            <tr>
+                                <td><strong>مادة التخثير والمعادلة (Coagulant)</strong></td>
+                                <td>معادلة الشحنات الكهربائية السطحية للجسيمات العالقة لمنع تنافرها وتسريع انفصالها</td>
+                                <td>إضافة تلقائية عبر مضخات حقن كيميائية مرتبطة بمعدل تدفق الخط</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout-box warning" style="margin-bottom:0; padding:0.45rem 0.8rem;">
+                    <p style="font-size:0.75rem; line-height:1.42; margin-bottom:0;">
+                        <strong>⚠️ غياب التكلفة المحاسبية للكيماويات:</strong> لم تُذكر في المقابلات أو التسجيلات طريقة
+                        احتساب تكلفة هذه الكيماويات
+                        أو كيفية تحميل معالجة المياه على المنتجات أو الألواح المصنعة، وهو ما يمثل بند تكلفة غير محدد
+                        المعالم حتى الآن.
+                    </p>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 14 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 14: SECTION 10: COST ACCOUNTING & FINANCE ================= -->
+        <section class="a4-page" id="page-15">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 10: Cost Accounting & Finance</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>10. التكاليف والمالية (Cost Accounting)</span>
+                    <span class="badge badge-info">التوزيع المباشر ومراكز التكلفة</span>
+                </h2>
+
+                <p style="margin-bottom: 0.55rem; font-size:0.8rem;">
+                    يوضح الجدول التالي عناصر التكلفة الصناعية المتبعة في مصنع ترازّو، وتصنيفها المحاسبي، مع إبراز
+                    التعارضات والتباينات بين المصادر:
+                </p>
+
+                <div class="data-table-wrapper" style="margin: 0.45rem 0 0.75rem 0;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 25%;">عنصر التكلفة</th>
+                                <th style="width: 25%;">التصنيف المحاسبي</th>
+                                <th style="width: 50%;">آلية التحميل والتوزيع المتبعة والتعارضات القائمة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>المواد الخام والخامات الحصوية</strong></td>
+                                <td>تكلفة مباشرة (Direct Material)</td>
+                                <td>تُحمَّل المواد المنصرفة من المخزن مباشرة على أمر الشغل (Job Order) المحدد للبلوك.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>مستلزمات التشغيل (أسلحة المناشير وأحجار الجلي)</strong></td>
+                                <td>إهلاك أو تكلفة مباشرة <span class="badge badge-query">[؟ أيهما]</span></td>
+                                <td>
+                                    تُحمَّل كإهلاك أو تكلفة مباشرة وتوزع على المتر المربع أو على عدد البلوكات المقطوعة
+                                    <span class="badge badge-query">[؟ يحتاج حسم أساس التوزيع المحاسبي بدقة]</span>.
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><strong>الريزن ومعالجة السطح</strong></td>
+                                <td>تكلفة تشغيلية مباشرة</td>
+                                <td>يُحتسب استهلاك الريزن وفق الكمية الفعلية المستهلكة بدقة على سطح اللوح المصقول.</td>
+                            </tr>
+                            <tr>
+                                <td><strong>المرافق العامة (الكهرباء، المياه، والغاز)</strong></td>
+                                <td>تكاليف غير مباشرة ومراكز تكلفة</td>
+                                <td>
+                                    توزعها الإدارة المالية على الماكينات التشغيلية وفق مراكز التكلفة المعتمدة (مباشرة،
+                                    غير مباشرة، ومرافق).
+                                    <span class="badge badge-query">[؟ نسب ومعايير التوزيع لم تُذكر في الاجتماعات وتحتاج
+                                        توثيقاً]</span>.
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout-box warning">
+                    <div class="callout-title">
+                        <span>⚠️ ثغرة الربط بين المنصرف والفعلي في تكلفة البلوك</span>
+                    </div>
+                    <p style="font-size:0.78rem; line-height:1.5;">
+                        نظراً لغياب الميزان عند الصرف من المخزن واعتماد الوزن عند الميكسر فقط، فإن التكلفة المحملة على
+                        أمر الشغل تمثل الكمية التقديرية أو المقاسة عند الميكسر دون وجود تسوية دورية للمخزون الفعلي
+                        المتبقي في ساحة الإنتاج، مما يُنشئ فروق جرد وتكاليف تشغيلية غير دقيقة تُربك معايير التكلفة
+                        المعيارية (Standard Costing).
+                    </p>
+                </div>
+
+                <div class="callout-box" style="margin-bottom:0;">
+                    <div class="callout-title">
+                        <span>💡 مراكز التكلفة المقترحة لنظام ERP المستهدف</span>
+                    </div>
+                    <p style="font-size:0.77rem; line-height:1.48; margin-bottom:0;">
+                        يوصي فريق الاستشارات بتأسيس 4 مراكز تكلفة رئيسية: (1) مركز التكسير والتجهيز | (2) مركز الصب
+                        والفاكيوم |
+                        (3) مركز المناشير والتقطيع | (4) مركز التلميع ومعالجة الأسطح ومحطة معالجة المياه؛ ليتم توزيع
+                        فواتير المرافق
+                        والصيانة وفق معايير مساحية أو استهلاكية محددة.
+                    </p>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 15 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 15: SECTION 11: DOCUMENTS & RECORDS ================= -->
+        <section class="a4-page" id="page-16">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 11: Documents & Records</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>11. المستندات والسجلات المذكورة</span>
+                    <span class="badge badge-info">قسم جديد (v0.1)</span>
+                </h2>
+
+                <p style="margin-bottom: 0.55rem; font-size:0.8rem;">
+                    يوضح الجدول التالي المستندات والسجلات الإجرائية العشرة التي تم رصدها صراحة خلال تفريغات ومقابلات
+                    العمليات وسلسلة الإمداد:
+                </p>
+
+                <div class="data-table-wrapper" style="margin: 0.45rem 0 0.75rem 0;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 26%;">المستند / السجل</th>
+                                <th style="width: 50%;">الغرض الوظيفي والدور في دورة العمل</th>
+                                <th style="width: 24%;">الجهة المسؤولة</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><strong>1. طلب شراء (Purchase Requisition - PR)</strong></td>
+                                <td>حصر الاحتياج من المواد الخام، قطع الغيار، ومستلزمات التشغيل وتحديد المواصفات</td>
+                                <td>مخطط الإنتاج / مخطط الصيانة</td>
+                            </tr>
+                            <tr>
+                                <td><strong>2. طلب عرض أسعار (RFQ)</strong></td>
+                                <td>استدراج عروض الأسعار والمواصفات الفنية من الموردين المعتمدين محلياً وخارجياً</td>
+                                <td>مسؤول المشتريات</td>
+                            </tr>
+                            <tr>
+                                <td><strong>3. أمر شراء معتمد (Purchase Order - PO)</strong></td>
+                                <td>التعاقد التجاري الملزم مع المورد لتوريد كميات محددة بأسعار وتواريخ متفق عليها</td>
+                                <td>مدير سلسلة الإمداد / الإدارة المالية</td>
+                            </tr>
+                            <tr>
+                                <td><strong>4. إذن استلام وفحص مخزني (GRN)</strong></td>
+                                <td>إثبات استلام الشحنة ومطابقتها ظاهرياً مع أمر الشراء وتسجيل الكميات المستلمة</td>
+                                <td>أمين المخزن / مهندس الفحص</td>
+                            </tr>
+                            <tr>
+                                <td><strong>5. تقرير فحص واختبار معملي (Lab Report)</strong></td>
+                                <td>توثيق نتائج اختبارات الضغط، السمك، واللمعان وإصدار قرار القبول أو الرفض</td>
+                                <td>مهندسو معمل الجودة</td>
+                            </tr>
+                            <tr>
+                                <td><strong>6. أمر شغل إنتاجي (Job / Production Order)</strong></td>
+                                <td>إطلاق دورة تصنيع البلوك أو الألواح وتحديد شجرة الخلطة (Mix Design) المستهدفة</td>
+                                <td>مخطط الإنتاج</td>
+                            </tr>
+                            <tr>
+                                <td><strong>7. إذن صرف مواد للتصنيع (Store Issue Slip)</strong></td>
+                                <td>توثيق صرف كسر الرخام، الأسمنت، والكيماويات من المستودع لصالة الإنتاج</td>
+                                <td>أمين المخزن / مشرف الوردية</td>
+                            </tr>
+                            <tr>
+                                <td><strong>8. بطاقة تتبع البلوك (Block Traveler Card)</strong></td>
+                                <td>بطاقة مرافقة للبلوك منذ صبه ومعالجته وحتى تقطيعه وتلميعه لتتبع تاريخ التصنيع</td>
+                                <td>مشرفو خطوط الإنتاج وضبط الجودة</td>
+                            </tr>
+                            <tr>
+                                <td><strong>9. أمر صيانة وإصلاح (Maintenance Work Order)</strong></td>
+                                <td>توثيق أعمال الصيانة الوقائية والطارئة، ساعات التوقف، وقطع الغيار المصروفة للماكينة
+                                </td>
+                                <td>مهندس الصيانة / مشرف الورشة</td>
+                            </tr>
+                            <tr>
+                                <td><strong>10. تقرير حصر الهدر والإنتاج اليومي</strong></td>
+                                <td>حصر الكميات المقطوعة (م²)، نسب الكسر، هوالك الحواف، ومخلفات التلميع والقص</td>
+                                <td>مشرفو الإنتاج / محاسب التكاليف الصناعية</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="callout-box warning" style="margin-bottom:0;">
+                    <div class="callout-title">
+                        <span>⚠️ تنبيه حاسم: عدم جمع نماذج فعلية للمستندات</span>
+                    </div>
+                    <p style="font-size:0.77rem; line-height:1.5; margin-bottom:0;">
+                        تؤكد شركة <strong>ABC Counsel</strong> أنه لم تُجمع نماذج ورقية أو قوالب إلكترونية فعلية (Excel
+                        / Word)
+                        لهذه المستندات العشرة حتى تاريخه. ويُعد الحصول على نماذج معبأة واقعياً متطلباً أساسياً لإعداد
+                        وثيقة
+                        المتطلبات التصميمية (Functional Design Document - FDD) وتكوين دورات العمل (Workflows) في نظام
+                        نظام ERP.
+                    </p>
+                </div>
+            </main>
+
+            <footer class="page-footer">
+                <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
+                <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
+                <span>الصفحة 16 من 20</span>
+            </footer>
+        </section>
+
+
+        <!-- ================= PAGE 16: SECTION 12: ISSUES, CONSTRAINTS & RISKS ================= -->
+        <section class="a4-page" id="page-17">
+            <header class="page-header">
+                <div class="page-header-logos">
+                    <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
+                </div>
+                <div class="doc-meta-header">
+                    <strong>Section 12: Issues & Constraints</strong>
+                    <span>v0.1</span>
+                </div>
+            </header>
+
+            <main class="page-content">
+                <h2 class="section-title">
+                    <span>12. المشكلات والقيود والمخاطر التشغيلية</span>
+                    <span class="badge badge-risk">سجل القضايا المفتوحة الموسع</span>
+                </h2>
+
+                <p style="margin-bottom: 0.5rem; font-size:0.8rem;">
+                    تم رصد سبع قضايا ومخاطر تشغيلية جوهرية في ممارسات العمل الحالية، تؤثر بشكل مباشر على دقة التكاليف
+                    وكفاءة الإنتاج:
+                </p>
+
+                <div class="data-table-wrapper" style="margin: 0.4rem 0 0.65rem 0;">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th style="width: 10%;">الكود</th>
+                                <th style="width: 32%;">المشكلة أو القيد المرصود</th>
+                                <th style="width: 46%;">الأثر التشغيلي والمالي والمخزني</th>
+                                <th style="width: 12%; text-align:center;">المصدر</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -2133,7 +2653,7 @@
                                     عدم دقة تسجيل استهلاك المواد وتكلفة أوامر الشغل، واحتمال نشوب خلافات حادة بين
                                     المخازن والإنتاج عند الجرد الدوري بسبب فروق الأوزان
                                 </td>
-                                <td><code>SRC-004</code></td>
+                                <td>ملاحظات تشغيلية</td>
                             </tr>
                             <tr style="background:#fff8f8;">
                                 <td><span class="badge badge-risk">ISS-002</span></td>
@@ -2146,7 +2666,7 @@
                                     استحالة إجراء مطابقة رقابية ثلاثية بين الكميات المنصرفة من المستودع، والمستخدمة
                                     فعلياً في الخلط، والمرتجعة إلى المخازن
                                 </td>
-                                <td><code>SRC-004</code><br><code>SRC-006</code></td>
+                                <td>ملاحظات تشغيلية</td>
                             </tr>
                             <tr style="background:#fffdf5;">
                                 <td><span class="badge badge-risk">RSK-001</span></td>
@@ -2159,7 +2679,7 @@
                                     حدوث هدر وخسارة مادية كاملة لكميات الخلطة المتصلبة لاحتوائها على الأسمنت سريع الشك،
                                     مع صعوبة تنظيف الميكسر
                                 </td>
-                                <td><code>SRC-003</code></td>
+                                <td>ملاحظات تشغيلية</td>
                             </tr>
                             <tr style="background:#fffdf5;">
                                 <td><span class="badge badge-risk">RSK-002</span></td>
@@ -2172,21 +2692,22 @@
                                     احتمال تمزق الجوالات وهدر الخامات أو تلوث الألوان المختلفة ببعضها البعض، مما يسبب
                                     تكاليف غير محسوبة وتلفيات في المظهر الجمالي للألواح
                                 </td>
-                                <td><code>SRC-003</code></td>
+                                <td>ملاحظات تشغيلية</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
 
-                <div class="callout-box danger" style="margin-top: 1rem;">
+                <div class="callout-box danger" style="margin-bottom:0;">
                     <div class="callout-title">
-                        <span>🚨 الأولوية القصوى لمعالجة مشكلات الأوزان</span>
+                        <span>🚨 الأولوية القصوى لمعالجة مشكلات الأوزان والمستلزمات</span>
                     </div>
-                    <p style="font-size:0.8rem; line-height:1.55;">
-                        يُجمع فريق الاستشارات على أن قضيتي <strong>ISS-001 و ISS-002</strong> تمثلان أكبر خطر على نجاح
-                        تطبيق نظام التكاليف الصناعية في D365؛ إذ لا يمكن لأي نظام تخطيط موارد أن يقدم تكلفة حقيقية
-                        للمنتج طالما أن وحدة الإدخال والصرف المخزني تعتمد على التقدير الجزافي، وهو ما يتطلب حلاً
-                        تشغيلياً أو استثمارياً (مثل توفير ميزان أرضي للمخزن) في مرحلة الـ To-Be.
+                    <p style="font-size:0.77rem; line-height:1.48; margin-bottom:0;">
+                        تُمثل قضايا <strong>ISS-001 و ISS-002 و ISS-003</strong> التحدي الأكبر أمام بناء موديول تكاليف
+                        حقيقي في نظام ERP؛
+                        فلا يمكن لأي برنامج محاسبي ضبط تكلفة المنتج طالما أن الصرف المخزني يعتمد على التقدير الجزافي،
+                        والاستهلاك الفعلي للأدوات لا يُقاس رقمياً،
+                        مما يفرض تبني حلول هندسية ومخزنية حاسمة في مرحلة الـ To-Be.
                     </p>
                 </div>
             </main>
@@ -2194,90 +2715,90 @@
             <footer class="page-footer">
                 <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
                 <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 11 من 14</span>
+                <span>الصفحة 17 من 20</span>
             </footer>
         </section>
 
 
-        <!-- ================= PAGE 12: SECTION 9: CONTRADICTIONS & AMBIGUITIES ================= -->
-        <section class="a4-page" id="page-12">
+        <!-- ================= PAGE 17: SECTION 13: CONTRADICTIONS & AMBIGUITIES ================= -->
+        <section class="a4-page" id="page-18">
             <header class="page-header">
                 <div class="page-header-logos">
                     <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
                 </div>
                 <div class="doc-meta-header">
-                    <strong>Section 9: Contradictions & Ambiguities</strong>
+                    <strong>Section 13: Contradictions & Ambiguities</strong>
                     <span>v0.1</span>
                 </div>
             </header>
 
             <main class="page-content">
                 <h2 class="section-title">
-                    <span>9. مصفوفة التعارضات والغموض للبت فيها</span>
-                    <span class="badge badge-query">6 نقاط خلافية</span>
+                    <span>13. مصفوفة التعارضات والغموض للبت فيها</span>
+                    <span class="badge badge-query">10 نقاط خلافية (محدثة v0.1)</span>
                 </h2>
 
-                <p style="margin-bottom: 0.65rem;">
-                    خلال مقارنة الوثائق ومحاضر الاجتماعات والجولة الميدانية، ظهرت ستة تعارضات جوهرية بين المصادر، وتحتاج
-                    هذه النقاط إلى قرار حاسم ورسمي من إدارة مصنع ترازّو لاعتماد الوصف النهائي:
+                <p style="margin-bottom: 0.45rem; font-size:0.8rem;">
+                    خلال مقارنة الوثائق ومحاضر الاجتماعات والتسجيلات، ظهرت عشرة تعارضات جوهرية تتطلب قراراً رسمياً
+                    حاسماً من إدارة مصنع ترازّو:
                 </p>
 
-                <div class="data-table-wrapper">
+                <div class="data-table-wrapper" style="margin: 0.35rem 0 0.65rem 0;">
                     <table class="data-table">
                         <thead>
                             <tr>
-                                <th style="width: 8%;">الكود</th>
-                                <th style="width: 24%;">الموضوع ومجال الخلاف</th>
-                                <th style="width: 48%;">التعارض بين المصادر المسجلة</th>
-                                <th style="width: 20%;">القرار المطلوب</th>
+                                <th style="width: 7%;">الكود</th>
+                                <th style="width: 23%;">الموضوع ومجال الخلاف</th>
+                                <th style="width: 48%;">التعارض القائم بين المصادر المسجلة</th>
+                                <th style="width: 22%;">القرار المطلوب</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td><strong>C-1</strong></td>
+                                <td><strong>#</strong></td>
                                 <td><strong>سعة سيلو الأسمنت</strong></td>
                                 <td>
-                                    سعة السيلو <strong>«10 طن»</strong> وفق ملاحظات العميل الأخيرة (SRC-006)
+                                    سعة السيلو <strong>«10 طن»</strong> وفق ملاحظات العميل الأخيرة
                                     <strong style="color:#b45309;">مقابل</strong>
                                     وجود <strong>«3 سيلوهات بسعة 100 طن لكل سيلو»</strong> في تقرير جولة المصنع
-                                    (SRC-003).
+                                    .
                                 </td>
                                 <td>تأكيد السعة الفعلية وعدد السيلوهات العاملة بالموقع</td>
                             </tr>
                             <tr>
-                                <td><strong>C-2</strong></td>
+                                <td><strong>#</strong></td>
                                 <td><strong>وحدة صرف الجوالات</strong></td>
                                 <td>
-                                    الصرف يتم <strong>«بالكيلوجرام»</strong> في SRC-006
+                                    الصرف يتم <strong>«بالكيلوجرام»</strong> في التقارير الميدانية
                                     <strong style="color:#b45309;">مقابل</strong>
                                     الصرف <strong>«بالعدد»</strong> لعدم توفر ميزان بالمخزن ولتفاوت أوزان الجوالات في
-                                    SRC-004.
+                                    التقارير الميدانية.
                                 </td>
                                 <td>تحديد وحدة القياس المعتمدة رسمياً في المخزن</td>
                             </tr>
                             <tr>
-                                <td><strong>C-3</strong></td>
+                                <td><strong>#</strong></td>
                                 <td><strong>مدة معالجة البلوك (Curing)</strong></td>
                                 <td>
-                                    مدة المعالجة <strong>«14 يوماً على الأقل»</strong> وفق SRC-006
+                                    مدة المعالجة <strong>«14 يوماً على الأقل»</strong> وفق التقارير الميدانية
                                     <strong style="color:#b45309;">مقابل</strong>
                                     المدى الزمني من <strong>«14 إلى 28 يوماً»</strong> حسب ما تم رصده في جولة المصنع
-                                    SRC-003.
+                                    التقارير الميدانية.
                                 </td>
                                 <td>اعتماد المدة القياسية المعتمدة في شجرة المنتج (BOM)</td>
                             </tr>
                             <tr>
-                                <td><strong>C-4</strong></td>
+                                <td><strong>#</strong></td>
                                 <td><strong>عدد المراحل الإنتاجية</strong></td>
                                 <td>
                                     <strong>«ثماني مراحل متفق عليها»</strong> تنتهي بالتلميع المباشر
                                     <strong style="color:#b45309;">مقابل</strong>
-                                    <strong>«تسع مراحل»</strong> معتمدة في خطة المشروع المبدئية (SRC-005).
+                                    <strong>«تسع مراحل»</strong> معتمدة في خطة المشروع المبدئية .
                                 </td>
                                 <td>اعتماد الهيكل المعتمد لمراحل التصنيع في النظام</td>
                             </tr>
                             <tr>
-                                <td><strong>C-5</strong></td>
+                                <td><strong>#</strong></td>
                                 <td><strong>نقطة تعريف اللوح النهائي</strong></td>
                                 <td>
                                     هل يُعتبر اللوح منتجاً نهائياً <strong>«بعد التلميع مباشرة»</strong>، أم يصبح منتجاً
@@ -2286,7 +2807,7 @@
                                 <td>تحديد نقطة التحول إلى صنف تام الصنع (Finished Good)</td>
                             </tr>
                             <tr>
-                                <td><strong>C-6</strong></td>
+                                <td><strong>#</strong></td>
                                 <td><strong>التبعية التنظيمية للفحص</strong></td>
                                 <td>
                                     هل يتبع فحص الجودة <strong>«إدارة التخطيط الصناعي»</strong>، أم يتبع <strong>«إدارة
@@ -2298,14 +2819,15 @@
                     </table>
                 </div>
 
-                <div class="callout-box warning">
-                    <div class="callout-title">
-                        <span>🎯 توصية فريق الاستشارات</span>
+                <div class="callout-box warning" style="margin-bottom:0; padding:0.5rem 0.8rem;">
+                    <div class="callout-title" style="font-size:0.8rem; margin-bottom:0.2rem;">
+                        <span>🎯 توصية فريق الاستشارات (Resolution Workshop)</span>
                     </div>
-                    <p style="font-size:0.78rem; line-height:1.5;">
-                        يُوصى بعقد ورشة عمل مركزة (Resolution Workshop) لمدة ساعتين مع مديري الإنتاج، وسلسلة الإمداد،
-                        والتكاليف في مصنع ترازّو للتوقيع على الخيارات المعتمدة في هذه المصفوفة لترقيتها من مسودة إلى
-                        وثيقة معتمدة (v1.0 Final).
+                    <p style="font-size:0.76rem; line-height:1.45; margin-bottom:0;">
+                        يُوصى بعقد ورشة عمل حسم التعارضات لمدة ساعتين بمشاركة مديري الإنتاج، سلسلة الإمداد، والتكاليف في
+                        مصنع ترازّو
+                        للتوقيع الرسمي على الخيارات المعتمدة في هذه المصفوفة لترقية الوثيقة من مسودة إلى وثيقة معتمدة
+                        نهائياً (v1.0 Final).
                     </p>
                 </div>
             </main>
@@ -2313,146 +2835,178 @@
             <footer class="page-footer">
                 <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
                 <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 12 من 14</span>
+                <span>الصفحة 18 من 20</span>
             </footer>
         </section>
 
 
-        <!-- ================= PAGE 13: SECTION 10 & 11: FOLLOW-UP & OUT OF SCOPE ================= -->
-        <section class="a4-page" id="page-13">
+        <!-- ================= PAGE 18: SECTION 14: ACTION ITEMS & OPEN QUESTIONS ================= -->
+        <section class="a4-page" id="page-19">
             <header class="page-header">
                 <div class="page-header-logos">
                     <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
                 </div>
                 <div class="doc-meta-header">
-                    <strong>Section 10 & 11: Action Items & Scope</strong>
+                    <strong>Section 14: Action Items & Open Gaps</strong>
                     <span>v0.1</span>
                 </div>
             </header>
 
             <main class="page-content">
-                <!-- Section 10: Follow-up Questions -->
                 <h2 class="section-title">
-                    <span>10. أسئلة المتابعة المطلوبة من فريق المصنع</span>
-                    <span class="badge badge-query">8 أسئلة محددة</span>
+                    <span>14. الأسئلة والفجوات المفتوحة لفريق المصنع</span>
+                    <span class="badge badge-query">13 سؤالاً محورياً (محدثة v0.1)</span>
                 </h2>
 
-                <div class="question-card">
-                    <div class="q-number">1</div>
-                    <div class="q-content">
-                        <div class="q-title">ما أسماء المراحل التسع المعتمدة وحدودها الفاصلة، وما هي المرحلة التاسعة
-                            بالتفصيل؟</div>
+                <p style="margin-bottom: 0.5rem; font-size:0.8rem;">
+                    يتطلب استكمال التوصيف الفني والهندسي للإجراءات الصناعية الإجابة الواضحة والموثقة على الأسئلة
+                    التالية:
+                </p>
+
+                <div class="questions-grid">
+                    <div class="question-card">
+                        <div class="q-number">1</div>
+                        <div class="q-content">
+                            <div class="q-title">ما أسماء المراحل التسع المعتمدة وحدودها الفاصلة، وما هي المرحلة التاسعة
+                                بالتفصيل؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">2</div>
+                        <div class="q-content">
+                            <div class="q-title">هل تحمل البلوكات حالياً أي كود أو تسجيل تتبعي يدوي، وكيف تُسجَّل
+                                الدفعتان (5+5 طن) في السجلات؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">3</div>
+                        <div class="q-content">
+                            <div class="q-title">ما الذي جُرِّب فعلاً في خط الإنتاج حتى الآن، وما الذي لا يزال تصميماً
+                                نظرياً ومخططاً؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">4</div>
+                        <div class="q-content">
+                            <div class="q-title">كيف تُحوَّل أهداف المبيعات وأوامر البيع إلى خطة إنتاج وطلبات شراء
+                                (المدة، المدخلات، وفحص الرصيد)؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">5</div>
+                        <div class="q-content">
+                            <div class="q-title">هل توجد حدود مالية لمصفوفة الاعتمادات، وهل تستطيع الإدارة المالية إيقاف
+                                أمر شراء فاز بمناقصة؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">6</div>
+                        <div class="q-content">
+                            <div class="q-title">كيف تُسجَّل الكميات المتبقية من الجوالات بعد انتهاء أمر الشغل، وأين
+                                تُخزن في صالة الإنتاج؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">7</div>
+                        <div class="q-content">
+                            <div class="q-title">ما هي الأدوات والوسائط المستخدمة حالياً في كل خطوة (نماذج ورقية، ملفات
+                                Excel، تطبيقات تواصل)؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">8</div>
+                        <div class="q-content">
+                            <div class="q-title">ما هي نسب ومعايير توزيع فواتير المرافق (كهرباء، غاز، مياه)، وما أساس
+                                توزيع مستلزمات التشغيل؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">9</div>
+                        <div class="q-content">
+                            <div class="q-title">ما نسب توزيع المرافق، وما أساس توزيع مستلزمات التشغيل، وكيف تُحسب تكلفة
+                                كيماويات معالجة المياه؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">10</div>
+                        <div class="q-content">
+                            <div class="q-title">ما دورة مطابقة فاتورة المورد مع أمر الشراء والاستلام المخزني وإجراءات
+                                السداد المالي؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">11</div>
+                        <div class="q-content">
+                            <div class="q-title">ما هي دورة المبيعات والتحصيل التفصيلية، وما هو هيكل الصيانة وجدولها
+                                الوقائي المعتمد؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card">
+                        <div class="q-number">12</div>
+                        <div class="q-content">
+                            <div class="q-title">ما معايير قبول الخامات والألواح تفصيلياً، وماذا يحدث للمواد أو الألواح
+                                المرفوضة في كل مرحلة؟</div>
+                        </div>
+                    </div>
+
+                    <div class="question-card" style="grid-column: span 2;">
+                        <div class="q-number">13</div>
+                        <div class="q-content">
+                            <div class="q-title">ما المعيار الهندسي المحدد لمدة معالجة البلوك (Curing) بين 14 أو 28
+                                يوماً، وهل يرتبط بنوع الأسمنت أم الطقس؟</div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="question-card">
-                    <div class="q-number">2</div>
-                    <div class="q-content">
-                        <div class="q-title">هل تحمل البلوكات حالياً أي كود أو تسجيل تتبعي يدوي، وكيف تُسجَّل الدفعتان
-                            (5+5 طن) في سجلات التشغيل؟</div>
-                    </div>
-                </div>
-
-                <div class="question-card">
-                    <div class="q-number">3</div>
-                    <div class="q-content">
-                        <div class="q-title">ما الذي جُرِّب فعلاً في خط الإنتاج حتى الآن، وما الذي لا يزال تصميماً
-                            نظرياً ومخططاً؟</div>
-                    </div>
-                </div>
-
-                <div class="question-card">
-                    <div class="q-number">4</div>
-                    <div class="q-content">
-                        <div class="q-title">كيف تُحوَّل أهداف المبيعات وأوامر البيع إلى خطة إنتاج وطلبات شراء (المدة
-                            الزمنية، مدخلات الخطة، وفحص الرصيد المخزني)؟</div>
-                    </div>
-                </div>
-
-                <div class="question-card">
-                    <div class="q-number">5</div>
-                    <div class="q-content">
-                        <div class="q-title">هل توجد حدود مالية لمصفوفة الاعتمادات (Approval Matrix)، وهل تستطيع الإدارة
-                            المالية إيقاف أمر شراء فاز بمناقصة؟</div>
-                    </div>
-                </div>
-
-                <div class="question-card">
-                    <div class="q-number">6</div>
-                    <div class="q-content">
-                        <div class="q-title">كيف تُسجَّل الكميات المتبقية من الجوالات بعد انتهاء تشغيل أمر الشغل، وأين
-                            تُخزن في صالة الإنتاج؟</div>
-                    </div>
-                </div>
-
-                <div class="question-card">
-                    <div class="q-number">7</div>
-                    <div class="q-content">
-                        <div class="q-title">ما هي الأدوات والوسائط المستخدمة حالياً في كل خطوة (نماذج ورقية، ملفات
-                            Excel، رسائل وتطبيقات تواصل)؟</div>
-                    </div>
-                </div>
-
-                <div class="question-card">
-                    <div class="q-number">8</div>
-                    <div class="q-content">
-                        <div class="q-title">ما هي نسب ومعايير توزيع فواتير المرافق (كهرباء، غاز، مياه)، وما هو أساس
-                            توزيع مستلزمات التشغيل (م2 أم عدد البلوكات)؟</div>
-                    </div>
-                </div>
-
-                <!-- Section 11: Out of Scope -->
-                <h2 class="section-title" style="margin-top: 1rem;">
-                    <span>11. خارج نطاق الوثيقة — الوضع المستهدف (To-Be)</span>
-                    <span class="badge badge-info">المرحلة القادمة</span>
-                </h2>
-                <div class="callout-box">
-                    <p style="font-size:0.8rem; line-height:1.55; margin-bottom:0;">
-                        الموضوعات التالية تقع صراحة خارج نطاق وثيقة الوضع الحالي، وسيتم بحثها وتصميمها تفصيلياً في وثيقة
-                        <strong>الوضع المستهدف (To-Be Solution Design)</strong>:
+                <div class="callout-box" style="margin-top:0.6rem; margin-bottom:0; padding:0.5rem 0.8rem;">
+                    <p style="font-size:0.76rem; color:#475569; margin-bottom:0;">
+                        <em>* ملاحظة: ستُشكل الإجابات المعتمدة على هذه الأسئلة الثلاثة عشر المدخلات المباشرة لورش عمل
+                            التصميم المستهدف (To-Be Workshops).</em>
                     </p>
-                    <ul
-                        style="padding-right:1.25rem; font-size:0.78rem; line-height:1.55; margin-top:0.35rem; margin-bottom:0;">
-                        <li><strong>نظام الباركود الرقمي (Barcode & QR):</strong> ترميز الألواح وربطها الآلي بكود البلوك
-                            الأم وتتبع حركة الألواح عبر الموبايل أو قارئ الباركود.</li>
-                        <li><strong>ميزان إضافي في المخزن:</strong> دراسة جدوى إضافة ميزان أرضي أو بسكول لضبط أوزان
-                            الجوالات عند الاستلام والصرف.</li>
-                        <li><strong>معالجة مشكلات القسم 8:</strong> صياغة الإجراءات التصحيحية المنهجية لحل مشكلات عدم
-                            دقة الأوزان وهدر الخلطة وتلف الجوالات عبر تطبيق Microsoft Dynamics 365 Business Central.
-                        </li>
-                    </ul>
                 </div>
             </main>
 
             <footer class="page-footer">
                 <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
                 <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 13 من 14</span>
+                <span>الصفحة 19 من 20</span>
             </footer>
         </section>
 
 
-        <!-- ================= PAGE 14: SECTION 12: APPROVAL & SIGN-OFF ================= -->
-        <section class="a4-page" id="page-14">
+        <!-- ================= PAGE 20: SECTION 15: APPROVAL & SIGN-OFF ================= -->
+        <section class="a4-page" id="page-20">
             <header class="page-header">
                 <div class="page-header-logos">
                     <img src="abc_logo.png" alt="ABC COUNSEL" class="header-logo-abc">
                 </div>
                 <div class="doc-meta-header">
-                    <strong>Section 12: Approvals & Sign-off</strong>
+                    <strong>Section 15: Approvals & Sign-off</strong>
                     <span>v0.1</span>
                 </div>
             </header>
 
             <main class="page-content">
                 <h2 class="section-title">
-                    <span>12. محضر مراجعة واعتماد الوثيقة</span>
+                    <span>15. محضر مراجعة واعتماد الوثيقة</span>
                     <span class="badge badge-info">التوقيعات الرسمية</span>
                 </h2>
 
-                <p style="margin-bottom: 0.85rem;">
-                    يُقر الطرفان بمراجعة مسودة وثيقة الوضع الحالي (As-Is Document) لمصنع ترازّو (Trazoo)، وتحديد نقاط
-                    الاستفسار والتعارضات تمهيداً لحسمها والانتقال للمرحلة التالية من المشروع:
+                <p style="margin-bottom: 0.85rem; font-size:0.825rem;">
+                    يُقر الطرفان بمراجعة مسودة وثيقة الوضع الحالي (As-Is Document - v0.1) لمصنع ترازّو (Trazoo)،
+                    وتحديد نقاط الاستفسار والتعارضات العشرة وسجل المشكلات تمهيداً لحسمها والانتقال لتصميم نموذج الوضع
+                    المستهدف (To-Be):
                 </p>
 
                 <!-- Signoff Grid Cards -->
@@ -2533,7 +3087,7 @@
                     </div>
                     <div style="text-align:left; direction:ltr;">
                         <span style="font-size:0.72rem; color:#94a3b8; display:block;">Implementation Partner for</span>
-                        <strong style="font-size:0.85rem; color:#b45309;">Trazoo Terrazzo Factory</strong>
+                        <strong style="font-size:0.85rem; color:#b45309;">Trazoo Terazoo Factory</strong>
                     </div>
                 </div>
             </main>
@@ -2541,29 +3095,14 @@
             <footer class="page-footer">
                 <span>وثيقة الوضع الحالي (As-Is) — مصنع ترازّو</span>
                 <span class="status-tag">مسودة للمراجعة (Draft v0.1)</span>
-                <span>الصفحة 14 من 14 (نهاية الوثيقة)</span>
+                <span>الصفحة 20 من 20 (نهاية الوثيقة)</span>
             </footer>
         </section>
 
     </div>
 
-    <!-- Interactive Script for Live Search, Filters, Word Export and TOC Scroll -->
+    <!-- Interactive Script for Filters and TOC Scroll -->
     <script>
-        function filterContent() {
-            var input = document.getElementById('searchInput');
-            var filter = input.value.toLowerCase();
-            var items = document.querySelectorAll('.pipeline-step, .data-table tbody tr, .question-card, .callout-box');
-
-            items.forEach(function (item) {
-                var text = item.textContent || item.innerText;
-                if (text.toLowerCase().indexOf(filter) > -1) {
-                    item.style.display = "";
-                } else {
-                    item.style.display = "none";
-                }
-            });
-        }
-
         function filterType(type, btnElement) {
             // Update active pill styling
             document.querySelectorAll('.filter-btn').forEach(function (b) {
@@ -2586,7 +3125,7 @@
                     show = true;
                 } else if (type === 'planned' && text.indexOf('مخطط') > -1) {
                     show = true;
-                } else if (type === 'risk' && (text.indexOf('ISS-') > -1 || text.indexOf('RSK-') > -1 || text.indexOf('خطر') > -1)) {
+                } else if (type === 'risk' && (text.indexOf('ISS-') > -1 || text.indexOf('RSK-') > -1 || text.indexOf('خطر') > -1 || text.indexOf('قيد') > -1)) {
                     show = true;
                 }
 
@@ -2594,65 +3133,18 @@
             });
         }
 
+        function scrollToPage(id) {
+            var el = document.getElementById(id);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
         function scrollToTOC() {
             var toc = document.getElementById('page-2');
             if (toc) {
                 toc.scrollIntoView({ behavior: 'smooth' });
             }
-        }
-
-        function exportToWord() {
-            var wrapper = document.querySelector('.doc-wrapper').cloneNode(true);
-
-            // Embed crisp logo as base64 in Word export
-            try {
-                var logoImg = document.querySelector('.header-logo-abc') || document.querySelector('.cover-logo-abc');
-                if (logoImg && logoImg.naturalWidth) {
-                    var canvas = document.createElement('canvas');
-                    canvas.width = logoImg.naturalWidth;
-                    canvas.height = logoImg.naturalHeight;
-                    var ctx = canvas.getContext('2d');
-                    ctx.drawImage(logoImg, 0, 0);
-                    var dataUrl = canvas.toDataURL('image/png');
-                    wrapper.querySelectorAll('img[src="abc_logo.png"]').forEach(function (el) {
-                        el.src = dataUrl;
-                    });
-                }
-            } catch (e) { }
-
-            var header = "<html xmlns:o='urn:schemas-microsoft-com:office:office' " +
-                "xmlns:w='urn:schemas-microsoft-com:office:word' " +
-                "xmlns='http://www.w3.org/TR/REC-html40'>" +
-                "<head><meta charset='utf-8'><title>وثيقة الوضع الحالي لمصنع ترازّو (Trazoo)</title>" +
-                "<style>" +
-                "@page { size: 210mm 297mm; margin: 15mm 15mm 15mm 15mm; } " +
-                "body { font-family: 'Alexandria', 'Cairo', Arial, sans-serif; direction: rtl; text-align: right; color: #1e293b; } " +
-                ".a4-page { page-break-after: always; margin-bottom: 30px; padding: 10px; border-bottom: 2px dashed #cbd5e1; } " +
-                ".page-header { display: flex; justify-content: space-between; border-bottom: 2px solid #0f172a; padding-bottom: 10px; margin-bottom: 15px; } " +
-                ".page-footer { display: flex; justify-content: space-between; border-top: 1px solid #cbd5e1; padding-top: 10px; margin-top: 20px; font-size: 11px; color: #64748b; } " +
-                "table { width: 100%; border-collapse: collapse; margin: 15px 0; } " +
-                "th { background-color: #0f172a; color: #ffffff; padding: 8px; border: 1px solid #cbd5e1; font-size: 12px; } " +
-                "td { padding: 8px; border: 1px solid #cbd5e1; font-size: 11px; } " +
-                ".callout-box { background: #f8fafc; border-right: 4px solid #0284c7; border: 1px solid #cbd5e1; padding: 12px; margin-bottom: 15px; } " +
-                ".pipeline-step, .question-card { border: 1px solid #cbd5e1; padding: 8px; margin-bottom: 8px; } " +
-                ".signoff-card { border: 1px solid #cbd5e1; padding: 12px; margin-bottom: 12px; } " +
-                "</style></head><body>";
-            var footer = "</body></html>";
-
-            var html = header + wrapper.innerHTML + footer;
-
-            var blob = new Blob(['\ufeff' + html], {
-                type: 'application/msword;charset=utf-8'
-            });
-
-            var url = URL.createObjectURL(blob);
-            var a = document.createElement('a');
-            a.href = url;
-            a.download = 'Trazoo_As_Is_Document_v0.1.doc';
-            document.body.appendChild(a);
-            a.click();
-            document.body.removeChild(a);
-            URL.revokeObjectURL(url);
         }
     </script>
 </body>
